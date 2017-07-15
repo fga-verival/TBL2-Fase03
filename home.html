@@ -7,11 +7,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/timeline.css">
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="js/slide.js"></script>
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar">
     <header>
       <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
@@ -21,17 +24,14 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand navbar-link" href="#"><i class="fa fa-home"></i> Team Based Learning</a>
+            <a class="navbar-brand navbar-link" href="#home"><i class="fa fa-home"></i> Team Based Learning</a>
           </div>
           <div class="collapse navbar-collapse" id="collapse-navbar">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#" class="navbar-link">Informações</a></li>
-              <li><a href="#features" class="navbar-link">Funcionalidades</a></li>
-              <li><a href="#news" class="navbar-link">Noticias</a></li>
-              <li><a href="#contact" class="navbar-link">Contato</a></li>
-              <li><a href="#about" class="navbar-link">Sobre</a></li>
-            </ul>
             <ul class="nav navbar-nav navbar-right">
+              <li><a href="#features" class="navbar-link"><i class="fa fa-puzzle-piece"></i> Funcionalidades</a></li>
+              <li><a href="#news" class="navbar-link"><i class="fa fa-newspaper-o"></i> Noticias</a></li>
+              <li><a href="#contact" class="navbar-link"><i class="fa fa-envelope-o"></i> Contato</a></li>
+              <li><a href="#footer" class="navbar-link"><i class="fa fa-slideshare"></i> Sobre</a></li>
               <li><a href="#register" class="navbar-link"><i class="fa fa-user-plus"></i> Registrar</a></li>
               <li><a href="#login" class="navbar-link"><i class="fa fa-sign-in"></i> Login</a></li>
             </ul>
@@ -40,36 +40,236 @@
       </nav>
     </header>
     <main>
-      <div class="parallax">
-        <div class="slideshow-container">
-          <div class="TBLSlides fade-animation">
-            <div class="numbertext">1 / 3</div>
-            <div class="header">Cabeçalho 1</div>
-            <div class="text">Texto 1</div>
-          </div>
-          <div class="TBLSlides fade-animation">
-            <div class="numbertext">2 / 3</div>
-            <div class="header">Cabeçalho 2</div>
-            <div class="text">Texto 2</div>
-          </div>
-          <div class="TBLSlides fade-animation">
-            <div class="numbertext">3 / 3</div>
-            <div class="header">Cabeçalho 3</div>
-            <div class="text">Texto 3</div>
-          </div>
-          <div class="prev" onclick="plusSlides(-1)"><i class="fa fa-chevron-left"></i></a></div>
-          <div class="next" onclick="plusSlides(1)"><i class="fa fa-chevron-right"></i></a></div>
+      <div class="parallax" id="home">
+        <h1 class="parallax-header">Team Based Learning</h1>
+      </div>
+      <div class="container">
+        <div class="page-header" id="features">
+          <h1 id="timeline" class="white">Funcionalidades</h1>
         </div>
-        <div class="dots">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
+        <ul class="timeline">
+          <li>
+            <div class="timeline-badge"><i class="fa fa-graduation-cap"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">Administrar disciplinas e alunos</h4>
+                <p><small class="text-muted"><i class="fa fa-clock-o"></i> 11 horas atrás via Administrador</small></p>
+              </div>
+              <div class="timeline-body">
+                <p>O professor pode adicionar, remover, criar e editar disciplinas e turmas e disponibilizar a senha de acesso a elas para os alunos entrarem. além de poder remover estudantes da turma ou da disciplina e adicioná-lo em outras turmas e disciplinas de sua autoria e gerenciar suas notas.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="timeline-inverted">
+            <div class="timeline-badge warning"><i class="fa fa-users"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">Funcionalidades do TBL</h4>
+                <p><small class="text-muted"><i class="fa fa-clock-o"></i> 10 horas atrás via Administrador</small></p>
+              </div>
+              <div class="timeline-body">
+                <p>Funcionalidades relacionadas às fases de preparação, garantia de preparo ou RAT, iRAT, gRAT e apelações, Aplicação de conceitos e avaliação em pares</p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="timeline-badge danger"><i class="fa fa-bar-chart"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">Relatório</h4>
+                <p><small class="text-muted"><i class="fa fa-clock-o"></i> 10 horas atrás via Administrador</small></p>
+              </div>
+              <div class="timeline-body">
+                <p>O professor terá um dashboard com relatórios do desempenho dos alunos em cada questão da avaliação, tendo um feedback para o que ele deve focar mais nas aulas.</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="timeline-inverted">
+            <div class="timeline-badge info"><i class="fa fa-gamepad"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">Rank e Gamificação</h4>
+                <p><small class="text-muted"><i class="fa fa-clock-o"></i> 10 horas atrás via Administrador</small></p>
+              </div>
+              <div class="timeline-body">
+                <p>Terá também um rank de grupos, na qual o primeiro colocado ficará exposto no Hall da Fama que será visto por novos alunos dos próximos semestres, não há rank individual porque o objetivo não é a competição e sim a colaboração.</p>
+              </div>
+            </div>
+          </li>
         </div>
       </div>
       <div class="container">
+        <div class="page-header" id="news">
+          <h1 class="white">Notícias</h1>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="panel panel-default panel-shadow">
+                  <div class="panel-body">
+                    <img src="img/parallax.jpg" class="img-thumbnail img-responsive center-block" alt="Notícia 1">
+                    <div class="row">
+                      <div class="col-sm-4 pull-right">
+                        <span class="label label-primary news-label">Importante</span>
+                      </div>
+                      <div class="col-sm-8">
+                        <h3>Notícia 1 <br /><small>(21 de Agosto de 2017)</small></h3>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <p class="text-justify">Sed porttitor lectus nibh. Donec rutrum congue leo eget malesuada. Proin eget tortor risus.
+                        Sed porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat. Pellentesque in ipsum id orci porta dapibus.
+                        Cras ultricies ligula sed magna dictum porta. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.
+                        Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus magna justo, lacinia eget consectetur sed,
+                        convallis at tellus.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel-footer">
+                    <button type="button" class="btn news">Ler mais</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="panel panel-default panel-shadow">
+                  <div class="panel-body">
+                    <img src="img/parallax.jpg" class="img-thumbnail img-responsive center-block" alt="Notícia 2">
+                    <div class="row">
+                      <div class="col-sm-4 pull-right">
+                        <span class="label label-success news-label">Funcionalidade</span>
+                      </div>
+                      <div class="col-sm-8">
+                        <h3>Notícia 2 <br /><small>(15 de Agosto de 2017)</small></h3>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <p class="text-justify">Sed porttitor lectus nibh. Donec rutrum congue leo eget malesuada. Proin eget tortor risus.
+                        Sed porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat. Pellentesque in ipsum id orci porta dapibus.
+                        Cras ultricies ligula sed magna dictum porta. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.
+                        Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vivamus magna justo, lacinia eget consectetur sed,
+                        convallis at tellus.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel-footer">
+                    <button type="button" class="btn news">Ler mais</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <button type="button" class="btn news news-button">Ver todas as nóticias</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="parallax" id="contact">
+        <div class="row">
+          <div class="col-sm-12">
+            <h1 class="contact-header">Contact</h1>
+          </div>
+          <form class="container">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-user-circle contact-icon-size"></i></span>
+                  <input id="name" type="text" class="form-control" name="name" placeholder="Nome">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-envelope contact-icon-size"></i></span>
+                  <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+                </div>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="form-group">
+                  <textarea class="form-control" rows="10" id="comment" placeholder="Comentário"></textarea>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </main>
-    <footer>
+    <footer id="footer">
+      <ul class="nav nav-tabs nav-justified">
+        <li class="active"><a data-toggle="tab" href="#about" class="footer-navbar"><i class="fa fa-slideshare"></i> Sobre</a></li>
+        <li><a data-toggle="tab" href="#advantages" class="footer-navbar"><i class="fa fa-list-alt"></i> Vantagens</a></li>
+        <li><a data-toggle="tab" href="#wiki" class="footer-navbar"><i class="fa fa-leanpub"></i> Documentação</a></li>
+        <li><a data-toggle="tab" href="#how-to-use" class="footer-navbar"><i class="fa fa-film"></i> Como usar</a></li>
+      </ul>
+      <div class="tab-content container">
+        <div id="about" class="panel panel-primary tab-pane fade in active footer-panel-shadow">
+          <div class="panel-heading">Sobre</div>
+          <div class="panel-body">
+            <p>Aprendizagem baseada em equipe ou TBL é uma estratégia de ensino
+            aprendizagem colaborativa que se concentra em um ciclo de três passos:</p>
+            <ol>
+              <li><b>Preparação</b>: Basicamente a(o) professor(a) irá disponibilizar de artigos e livros para estudo que
+              será a preparação para a avaliação;</li>
+              <li><b>Avaliações em classe</b>: A primeira avaliação é individual e a segunda em grupo para testar o conhecimento
+              adquirido na preparação cada um com seu respectivo peso;</li>
+              <li><b>Pequeno projeto centrado na aplicação</b>: Aplicar todo o conhecimento adquirido em um contexto real do tópico proposto.</li>
+            </ol>
+          </div>
+        </div>
+        <div id="advantages" class="panel panel-primary tab-pane fade footer-panel-shadow">
+          <div class="panel-heading">Vantagens</div>
+          <div class="panel-body">
+            <p>A utilização do TBL tem algumas vantagens:</p>
+            <ol>
+              <li><b>Colaboração</b>: O principal objetivo é o aprendizado em equipes, um ajudando o outro.</li>
+              <li><b>Entreterimento</b>: O software tem uma ideia de gameficação, tendo competição entre equipes para
+              que as equipes possam treinar a colaboração entre si.</li>
+              <li><b>Capacitação</b>: Profissionais mais capacitados para o mercado de trabalho, pois a métodologia faz o estudante
+              estudar constantemente e trabalhar em equipe..</li>
+              <li><b>Inovação</b>: Sair do comodismo e experimentar o novo.</li>
+              <li><b>Ensino aprendizado</b>: O aluno se torna mais participativo e motivado a aprender e o professor torna a aula
+              mais ativa e interessante.</li>
+            </ol>
+          </div>
+        </div>
+        <div id="wiki" class="panel panel-primary tab-pane fade footer-panel-shadow">
+          <div class="panel-heading">Documentação</div>
+          <div class="panel-body">A documentação se encontra na <a href="https://github.com/TeamBasedLearning/Service/wiki">wiki do projeto</a></div>
+        </div>
+        <div id="how-to-use" class="panel panel-primary tab-pane fade footer-panel-shadow">
+          <div class="panel-heading">Como usar</div>
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="embed-responsive embed-responsive-4by3">
+                  <iframe class="video-frame embed-responsive-item" src="https://www.youtube.com/embed/LwUO6HEq6kM" frameborder="0" allowfullscreen>
+                  </iframe>
+                </div>
+                <p>Vídeo de como usar o TBL.</p>
+              </div>
+              <div class="col-sm-6">
+                <div class="embed-responsive embed-responsive-4by3">
+                  <iframe class="video-frame embed-responsive-item" src="https://www.youtube.com/embed/LwUO6HEq6kM" frameborder="0" allowfullscreen>
+                  </iframe>
+                </div>
+                <p>Vídeo de como usar o software.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <p class="copyright">Site criado por <a href="https://github.com/VictorArnaud">Victor Arnaud</a></p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
