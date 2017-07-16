@@ -1,2 +1,5 @@
 # Prototipos
-Prototipo de alta e de baixa fidelidade
+
+Protótipo de alta fidelidade do TBL.
+
+Wiki: https://github.com/TeamBasedLearning/Service/wiki
