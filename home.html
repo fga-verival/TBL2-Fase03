@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/parallax.css">
     <link rel="stylesheet" href="css/timeline.css">
     <link rel="stylesheet" href="css/news.css">
     <link rel="stylesheet" href="css/contact.css">
@@ -114,7 +115,7 @@
                     <img src="img/parallax.jpg" class="img-thumbnail img-responsive center-block" alt="Notícia 1">
                     <div class="row">
                       <div class="col-sm-4 pull-right">
-                        <span class="label label-primary news-label">Importante</span>
+                        <a href="news/news.html#important"><span class="label label-primary news-label">Importante</span></a>
                       </div>
                       <div class="col-sm-8">
                         <h3>Notícia 1 <br /><small>(21 de Agosto de 2017)</small></h3>
@@ -131,7 +132,7 @@
                     </div>
                   </div>
                   <div class="panel-footer">
-                    <button type="button" class="btn news">Ler mais</button>
+                    <a href="news/new1.html"  class="btn news">Ler mais</a>
                   </div>
                 </div>
               </div>
@@ -141,7 +142,7 @@
                     <img src="img/parallax.jpg" class="img-thumbnail img-responsive center-block" alt="Notícia 2">
                     <div class="row">
                       <div class="col-sm-4 pull-right">
-                        <span class="label label-success news-label">Funcionalidade</span>
+                        <a href="news/news.html#features"><span class="label label-success news-label">Funcionalidade</span></a>
                       </div>
                       <div class="col-sm-8">
                         <h3>Notícia 2 <br /><small>(15 de Agosto de 2017)</small></h3>
@@ -158,13 +159,13 @@
                     </div>
                   </div>
                   <div class="panel-footer">
-                    <button type="button" class="btn news">Ler mais</button>
+                    <a href="news/new2.html" class="btn news">Ler mais</a>
                   </div>
                 </div>
               </div>
             </div>
             <div class="row">
-              <button type="button" class="btn news news-button">Ver todas as nóticias</button>
+              <a href="news/news.html" class="btn news news-button">Ver todas as nóticias</a>
             </div>
           </div>
         </div>
@@ -174,7 +175,7 @@
           <div class="col-sm-12">
             <h1 class="contact-header">Contact</h1>
           </div>
-          <form class="container">
+          <form class="container" action="#" method="post" autocomplete="off" novalidate>
             <div class="row">
               <div class="col-sm-6">
                 <div class="input-group">
@@ -195,6 +196,11 @@
                 <div class="form-group">
                   <textarea class="form-control" rows="10" id="comment" placeholder="Comentário"></textarea>
                 </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <button type="submit" class="btn btn-primary send-button"><i class="fa fa-send"></i> Enviar</button>
               </div>
             </div>
           </form>
@@ -241,7 +247,9 @@
         </div>
         <div id="wiki" class="panel panel-primary tab-pane fade footer-panel-shadow">
           <div class="panel-heading">Documentação</div>
-          <div class="panel-body">A documentação se encontra na <a href="https://github.com/TeamBasedLearning/Service/wiki">wiki do projeto</a></div>
+          <div class="panel-body">A documentação se encontra na
+            <a href="https://github.com/TeamBasedLearning/Service/wiki" target="_blank">wiki do projeto</a>
+          </div>
         </div>
         <div id="how-to-use" class="panel panel-primary tab-pane fade footer-panel-shadow">
           <div class="panel-heading">Como usar</div>
@@ -256,7 +264,7 @@
               </div>
               <div class="col-sm-6">
                 <div class="embed-responsive embed-responsive-4by3">
-                  <iframe class="video-frame embed-responsive-item" src="https://www.youtube.com/embed/LwUO6HEq6kM" frameborder="0" allowfullscreen>
+                  <iframe class="video-frame embed-responsive-item" src="https://www.youtube.com/embed/yHssVGwCgDw" frameborder="0" allowfullscreen>
                   </iframe>
                 </div>
                 <p>Vídeo de como usar o software.</p>
@@ -267,7 +275,7 @@
       </div>
       <div class="row">
         <div class="col-sm-12">
-          <p class="copyright">Site criado por <a href="https://github.com/VictorArnaud">Victor Arnaud</a></p>
+          <p class="copyright">Site criado por <a href="https://github.com/VictorArnaud" target="_blank">Victor Arnaud</a></p>
         </div>
       </div>
     </footer>

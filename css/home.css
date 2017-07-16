@@ -4,8 +4,10 @@ body {
   overflow-x: hidden;
 }
 
-.white {
-  color: white;
+.divisor {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-top: 0.2px solid #656363;
 }
 
 /* Navbar */
@@ -16,7 +18,6 @@ body {
 .navbar-link:hover {
   color: white !important;
 }
-
 
 /* Navbar - Bootstrap */
 .navbar {
@@ -36,24 +37,27 @@ body {
 }
 
 
-/* Parallax */
-.parallax {
-  /* The image used */
-  background-image: url("../img/parallax.jpg");
-  /* Set a specific height */
-  height: 570px;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+/* Palheta de cores*/
+.white {
+  color: white;
 }
 
-.parallax-header {
-  margin-top: 0px;
-  text-align: center;
+.lighten-blue-grey {
+  color: #ECEFF1
+}
+
+.darken-blue-grey {
+  color: #263238
+}
+
+.darken-red {
+  color: #b71c1c
+}
+
+
+/* Copyright */
+.copyright {
   color: white;
-  padding-top: 250px;
-  text-shadow: 1px 1px 2px black, 0 0 25px grey;
+  padding-left: 10px;
 }
 

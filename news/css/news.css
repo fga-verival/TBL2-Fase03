@@ -1,0 +1,20 @@
+.navbar {
+  position: relative;
+}
+
+.lighten-blue-grey > a:hover {
+  text-decoration: none;
+}
+
+.panel {
+  margin-top: 10px;
+}
+
+.pagination {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.no-decoration:hover {
+  text-decoration: none;
+}
