@@ -1,0 +1,72 @@
+/* Buttons vertical */
+main {
+  position: relative;
+  top: 50px;
+}
+
+.btn-group-vertical {
+  width: 100%;
+}
+
+.btn-group-vertical > .btn {
+  width: 100%;
+  height: 100px;
+  background-color: transparent;
+  border: 1px solid #343841;
+  color: #B3B3B3;
+  border-radius: 0;
+}
+
+.btn-group-vertical > .btn:hover,
+.btn-group-vertical > .btn:focus {
+  color: white;
+  border: 1px solid #343841;
+  border-left: 3px solid blue;
+}
+
+.icon-lg {
+  font-size: 48px;
+  padding-top: 20px;
+}
+
+/* Message events block*/
+.message {
+  background-color: #343841;
+}
+
+.message > p {
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #B3B3B3;
+}
+
+/* Profile block */
+.name {
+  color: white;
+  margin-top: 10px;
+}
+
+.label {
+  margin-left: 10px;
+}
+
+.label-default {
+  margin-right: 10px;
+}
+
+.table-content {
+  background-color: #ECEFF1;
+}
+
+.email {
+  padding-left: 44px;
+}
+
+.college {
+  padding-left: 10px;
+}
+
+.course {
+  padding-left: 37px;
+}

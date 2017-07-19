@@ -4,12 +4,6 @@ body {
   overflow-x: hidden;
 }
 
-.divisor {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border-top: 0.2px solid #656363;
-}
-
 /* Navbar */
 .navbar-link {
   color: #cfd8dc !important;
@@ -43,21 +37,30 @@ body {
 }
 
 .lighten-blue-grey {
-  color: #ECEFF1
+  color: #ECEFF1;
 }
 
 .darken-blue-grey {
-  color: #263238
+  color: #263238;
 }
 
 .darken-red {
-  color: #b71c1c
+  color: #b71c1c;
 }
 
+/* Others */
+.no-decoration:hover {
+  text-decoration: none;
+}
+
+.divisor {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-top: 0.2px solid #656363;
+}
 
 /* Copyright */
 .copyright {
   color: white;
   padding-left: 10px;
 }
-

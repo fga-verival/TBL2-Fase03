@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TBL</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse-navbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand navbar-link" href="#vai-para-a-home-logado"><i class="fa fa-home"></i> Team Based Learning</a>
+          </div>
+          <div class="collapse navbar-collapse" id="collapse-navbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="../home.html#home" class="navbar-link"><i class="fa fa-sign-out"></i> Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="row">
+        <div class="col-sm-12 message">
+            <p class="pull-left"><i class="fa fa-feed"></i> Não há eventos</p>
+            <p class="pull-right">Quinta, 10 de Janeiro de 2017 <i class="fa fa-calendar"></i></p>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Sidebar -->
+        <div class="col-sm-2">
+          <div class="btn-group-vertical">
+            <a href="#" class="btn" data-toggle="tooltip" data-placement="right" title="Página principal">
+              <i class="fa fa-user icon-lg"></i>
+            </a>
+            <a href="#" class="btn" data-toggle="tooltip" data-placement="right" title="Editar informações pessoais">
+              <i class="fa fa-edit icon-lg"></i>
+            </a>
+            <a href="#" class="btn" data-toggle="tooltip" data-placement="right" title="Mensagens">
+              <i class="fa fa-envelope icon-lg"></i>
+            </a>
+          </div>
+        </div>
+        <!-- profile -->
+        <div class="col-sm-10">
+          <div class="container-fluid">
+            <div class="page-header profile">
+              <h1 class="white">Perfil</h1>
+            </div>
+            <div class="row">
+              <div class="col-sm-3">
+                <img src="../img/user.png" class="img-rounded img-responsive center-block" alt="User">
+              </div>
+              <div class="col-sm-9">
+                <div class="row">
+                  <span class="label label-primary pull-left">Aluno</span>
+                  <span class="label label-success pull-left">Online</span>
+                  <span class="label label-default pull-right">13/0128393</span>
+                </div>
+                <h2 class="name">Victor Hugo Arnaud Deon</h2>
+                <p class="lighten-blue-grey">
+                  <i class="fa fa-envelope"></i>
+                  <b>Email</b>: <span class="email">victorhad@gmail.com</span>
+                </p>
+                <p class="lighten-blue-grey">
+                  <i class="fa fa-institution"></i>
+                  <b>Instituição</b>: <span class="college">UnB - Universidade de brasília</span>
+                </p>
+                <p class="lighten-blue-grey">
+                  <i class="fa fa-graduation-cap"></i>
+                  <b>Curso</b>: <span class="course">Engenharia de Software</span>
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-12">
+                <p class="lighten-blue-grey pull-left"><i class="fa fa-history"></i> Último login: Online</p>
+                <p class="lighten-blue-grey pull-right">Criado em 3 dias atrás</p>
+              </div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="table-responsive">
+                  <table class="table table-hover">
+                    <thead class="lighten-blue-grey">
+                      <tr>
+                        <th><i class="fa fa-book"></i> Disciplina</th>
+                        <th><i class="fa fa-slideshare"></i> Turma</th>
+                        <th><i class="fa fa-id-badge"></i> Professor</th>
+                        <th class="text-center"><i class="fa fa-wrench"></i> Opções</th>
+                      </tr>
+                    </thead>
+                    <tbody class="table-content">
+                      <tr>
+                        <td>
+                          <i class="fa fa-bookmark-o"></i>
+                          Medição e Análise
+                        </td>
+                        <td>Turma A</td>
+                        <td>Professor(a): Cristiane ...</td>
+                        <td>
+                          <button type="button" class="btn btn-primary btn-block"><i class="fa fa-eye"></i> Visualizar</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <i class="fa fa-bookmark-o"></i>
+                          Requisitos de Software
+                        </td>
+                        <td>Turma C</td>
+                        <td>Professor(a): Elaine ...</td>
+                        <td>
+                          <button type="button" class="btn btn-primary btn-block"><i class="fa fa-eye"></i> Visualizar</button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <i class="fa fa-bookmark-o"></i>
+                          Calculo 01
+                        </td>
+                        <td>Turma A</td>
+                        <td>Professor(a): Mario ...</td>
+                        <td>
+                          <button type="button" class="btn btn-primary btn-block"><i class="fa fa-eye"></i> Visualizar</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
