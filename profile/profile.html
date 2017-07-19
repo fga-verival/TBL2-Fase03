@@ -42,11 +42,17 @@
         <!-- Sidebar -->
         <div class="col-sm-2">
           <div class="btn-group-vertical">
-            <a href="#" class="btn" data-toggle="tooltip" data-placement="right" title="Página principal">
+            <a href="#" class="btn" data-toggle="tooltip" data-placement="right" title="Perfil">
               <i class="fa fa-user icon-lg"></i>
             </a>
             <a href="#" class="btn" data-toggle="tooltip" data-placement="right" title="Editar informações pessoais">
               <i class="fa fa-edit icon-lg"></i>
+            </a>
+            <a href="#" class="btn" data-toggle="tooltip" data-placement="right" title="Procurar disciplina/turma">
+              <i class="fa fa-search icon-lg"></i>
+            </a>
+            <a href="#" class="btn" data-toggle="tooltip" data-placement="right" title="Criar disciplina/turma">
+              <i class="fa fa-book icon-lg"></i>
             </a>
             <a href="#" class="btn" data-toggle="tooltip" data-placement="right" title="Mensagens">
               <i class="fa fa-envelope icon-lg"></i>
@@ -68,14 +74,14 @@
               </div>
               <div class="col-sm-9">
                 <div class="row">
-                  <span class="label label-primary pull-left">Aluno</span>
+                  <span class="label label-primary pull-left">Professor(a)</span>
                   <span class="label label-success pull-left">Online</span>
-                  <span class="label label-primary label-number pull-right">13/0128393</span>
+                  <span class="label label-primary label-number pull-right">Número de identificação</span>
                 </div>
-                <h2 class="name">Victor Hugo Arnaud Deon</h2>
+                <h2 class="name">Fulano de Tal</h2>
                 <p class="lighten-blue-grey">
                   <i class="fa fa-envelope"></i>
-                  <b>Email</b>: <span class="email">victorhad@gmail.com</span>
+                  <b>Email</b>: <span class="email">fulano@gmail.com</span>
                 </p>
                 <p class="lighten-blue-grey">
                   <i class="fa fa-institution"></i>
@@ -101,7 +107,8 @@
                   <div class="panel-heading">
                       <h4 class="panel-title">
                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-                          <span><i class="fa fa-book"></i> Medição e Análise - Turma A</span>
+                          <span><i class="fa fa-book"></i> Medição e Análise</span>
+                          <span class="pull-right">Turma A <i class="fa fa-slideshare"></i></span>
                         </a>
                       </h4>
                     </div>
@@ -110,8 +117,13 @@
                         Disciplina de medição e análise...
                       </div>
                       <div class="panel-footer">
-                        Professor(a): Cristiane ...
-                        <a href="#"><span class="pull-right"><i class="fa fa-eye"></i> Visualizar</span></a>
+                        Professor(a): Fulano de Tal
+                        <div class="btn-group pull-right btn-class-group">
+                          <button type="button" class="btn btn-class"><i class="fa fa-eye"></i></button>
+                          <button type="button" class="btn btn-class"><i class="fa fa-trophy"></i></button>
+                          <button type="button" class="btn btn-class"><i class="fa fa-edit"></i></button>
+                          <button type="button" class="btn btn-class-danger"><i class="fa fa-trash"></i></button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -119,7 +131,8 @@
                     <div class="panel-heading">
                       <h4 class="panel-title">
                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-                          <span><i class="fa fa-book"></i> Requisitos de Software - Turma C</span>
+                          <span><i class="fa fa-book"></i> Requisitos de Software</span>
+                          <span class="pull-right">Turma C <i class="fa fa-slideshare"></i></span>
                         </a>
                       </h4>
                     </div>
@@ -128,8 +141,13 @@
                         Disciplina de requisitos de software...
                       </div>
                       <div class="panel-footer">
-                        Professor(a): Elaine ...
-                        <a href="#"><span class="pull-right"><i class="fa fa-eye"></i> Visualizar</span></a>
+                        Professor(a): Fulano de tal
+                        <div class="btn-group pull-right btn-class-group">
+                          <button type="button" class="btn btn-class"><i class="fa fa-eye"></i></button>
+                          <button type="button" class="btn btn-class"><i class="fa fa-trophy"></i></button>
+                          <button type="button" class="btn btn-class"><i class="fa fa-edit"></i></button>
+                          <button type="button" class="btn btn-class-danger"><i class="fa fa-trash"></i></button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -137,7 +155,8 @@
                     <div class="panel-heading">
                       <h4 class="panel-title">
                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-                          <span><i class="fa fa-book"></i> Calculo 01 - Turma A</span>
+                          <span><i class="fa fa-book"></i> Calculo 01</span>
+                          <span class="pull-right">Turma A <i class="fa fa-slideshare"></i></span>
                         </a>
                       </h4>
                     </div>
@@ -146,8 +165,61 @@
                         Disciplina de calculo 01...
                       </div>
                       <div class="panel-footer">
-                        Professor(a): Mario ...
-                        <a href="#"><span class="pull-right"><i class="fa fa-eye"></i> Visualizar</span></a>
+                        Professor(a): Fulano de Tal
+                        <div class="btn-group pull-right btn-class-group">
+                          <button type="button" class="btn btn-class"><i class="fa fa-eye"></i></button>
+                          <button type="button" class="btn btn-class"><i class="fa fa-trophy"></i></button>
+                          <button type="button" class="btn btn-class"><i class="fa fa-edit"></i></button>
+                          <button type="button" class="btn btn-class-danger"><i class="fa fa-trash"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                          <span><i class="fa fa-book"></i> Medição e Análise</span>
+                          <span class="pull-right">Turma B <i class="fa fa-slideshare"></i></span>
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapse4" class="panel-collapse collapse out">
+                      <div class="panel-body">
+                        Disciplina de medição e análise...
+                      </div>
+                      <div class="panel-footer">
+                        Professor(a): Fulano de Tal
+                        <div class="btn-group pull-right btn-class-group">
+                          <button type="button" class="btn btn-class"><i class="fa fa-eye"></i></button>
+                          <button type="button" class="btn btn-class"><i class="fa fa-trophy"></i></button>
+                          <button type="button" class="btn btn-class"><i class="fa fa-edit"></i></button>
+                          <button type="button" class="btn btn-class-danger"><i class="fa fa-trash"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+                          <span><i class="fa fa-book"></i> Computação Básica</span>
+                          <span class="pull-right">Turma B <i class="fa fa-slideshare"></i></span>
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapse5" class="panel-collapse collapse out">
+                      <div class="panel-body">
+                        Disciplina de computação básica...
+                      </div>
+                      <div class="panel-footer">
+                        Professor(a): Fulano de Tal
+                        <div class="btn-group pull-right btn-class-group">
+                          <button type="button" class="btn btn-class"><i class="fa fa-eye"></i></button>
+                          <button type="button" class="btn btn-class"><i class="fa fa-trophy"></i></button>
+                          <button type="button" class="btn btn-class"><i class="fa fa-edit"></i></button>
+                          <button type="button" class="btn btn-class-danger"><i class="fa fa-trash"></i></button>
+                        </div>
                       </div>
                     </div>
                   </div>
