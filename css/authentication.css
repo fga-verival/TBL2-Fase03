@@ -54,3 +54,22 @@
 .icon-md {
   font-size: 20px;
 }
+
+.forget-password {
+  padding-top: 6px;
+}
+
+.send-email-button {
+  background-color: #263238 !important;
+  width: 98%;
+  color: white;
+}
+
+.send-email-button:hover {
+  color: white;
+}
+
+.reset-password-input {
+  color: white;
+  background-color: #263238;
+}

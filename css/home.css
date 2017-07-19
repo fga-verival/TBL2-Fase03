@@ -4,6 +4,16 @@ body {
   overflow-x: hidden;
 }
 
+main {
+  position: relative;
+  top: 50px;
+}
+
+footer {
+  position: relative;
+  top: 50px;
+}
+
 /* Navbar */
 .navbar-link {
   color: #cfd8dc !important;

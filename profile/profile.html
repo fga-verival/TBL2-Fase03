@@ -51,6 +51,9 @@
             <a href="#" class="btn" data-toggle="tooltip" data-placement="right" title="Mensagens">
               <i class="fa fa-envelope icon-lg"></i>
             </a>
+            <a href="#" class="btn" data-toggle="tooltip" data-placement="right" title="Deletar conta">
+              <i class="fa fa-trash icon-lg"></i>
+            </a>
           </div>
         </div>
         <!-- profile -->
@@ -67,7 +70,7 @@
                 <div class="row">
                   <span class="label label-primary pull-left">Aluno</span>
                   <span class="label label-success pull-left">Online</span>
-                  <span class="label label-default pull-right">13/0128393</span>
+                  <span class="label label-primary label-number pull-right">13/0128393</span>
                 </div>
                 <h2 class="name">Victor Hugo Arnaud Deon</h2>
                 <p class="lighten-blue-grey">
@@ -89,62 +92,82 @@
                 <p class="lighten-blue-grey pull-left"><i class="fa fa-history"></i> Último login: Online</p>
                 <p class="lighten-blue-grey pull-right">Criado em 3 dias atrás</p>
               </div>
-            </div>
-            <hr />
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="table-responsive">
-                  <table class="table table-hover">
-                    <thead class="lighten-blue-grey">
-                      <tr>
-                        <th><i class="fa fa-book"></i> Disciplina</th>
-                        <th><i class="fa fa-slideshare"></i> Turma</th>
-                        <th><i class="fa fa-id-badge"></i> Professor</th>
-                        <th class="text-center"><i class="fa fa-wrench"></i> Opções</th>
-                      </tr>
-                    </thead>
-                    <tbody class="table-content">
-                      <tr>
-                        <td>
-                          <i class="fa fa-bookmark-o"></i>
-                          Medição e Análise
-                        </td>
-                        <td>Turma A</td>
-                        <td>Professor(a): Cristiane ...</td>
-                        <td>
-                          <button type="button" class="btn btn-primary btn-block"><i class="fa fa-eye"></i> Visualizar</button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <i class="fa fa-bookmark-o"></i>
-                          Requisitos de Software
-                        </td>
-                        <td>Turma C</td>
-                        <td>Professor(a): Elaine ...</td>
-                        <td>
-                          <button type="button" class="btn btn-primary btn-block"><i class="fa fa-eye"></i> Visualizar</button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <i class="fa fa-bookmark-o"></i>
-                          Calculo 01
-                        </td>
-                        <td>Turma A</td>
-                        <td>Professor(a): Mario ...</td>
-                        <td>
-                          <button type="button" class="btn btn-primary btn-block"><i class="fa fa-eye"></i> Visualizar</button>
-                        </td>
-                      </tr>
-                    </tbody>
+          </div>
+          <hr />
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                          <span><i class="fa fa-book"></i> Medição e Análise - Turma A</span>
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse out">
+                      <div class="panel-body">
+                        Disciplina de medição e análise...
+                      </div>
+                      <div class="panel-footer">
+                        Professor(a): Cristiane ...
+                        <a href="#"><span class="pull-right"><i class="fa fa-eye"></i> Visualizar</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                          <span><i class="fa fa-book"></i> Requisitos de Software - Turma C</span>
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse out">
+                      <div class="panel-body">
+                        Disciplina de requisitos de software...
+                      </div>
+                      <div class="panel-footer">
+                        Professor(a): Elaine ...
+                        <a href="#"><span class="pull-right"><i class="fa fa-eye"></i> Visualizar</span></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                          <span><i class="fa fa-book"></i> Calculo 01 - Turma A</span>
+                        </a>
+                      </h4>
+                    </div>
+                    <div id="collapse3" class="panel-collapse collapse out">
+                      <div class="panel-body">
+                        Disciplina de calculo 01...
+                      </div>
+                      <div class="panel-footer">
+                        Professor(a): Mario ...
+                        <a href="#"><span class="pull-right"><i class="fa fa-eye"></i> Visualizar</span></a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+            <ul class="pagination">
+              <li><a href="#"><<</a></li>
+              <li><a href="#">1</a></li>
+              <li class="active"><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">>></a></li>
+            </ul>
           </div>
         </div>
       </div>
     </main>
+    <!-- Delete button -->
+    <!-- Notification button -->
   </body>
 </html>

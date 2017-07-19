@@ -147,6 +147,12 @@
     float: right;
   }
 
+  .timeline-badge {
+    left: 15px;
+    margin-left: 0;
+    top: 16px;
+  }
+
   .timeline-panel:before {
     border-left-width: 0;
     border-right-width: 15px;
