@@ -1,31 +1,7 @@
-/* Profile block */
-.name {
-  color: white;
+.panel {
   margin-top: 10px;
 }
 
-.label {
-  margin-top: 5px;
-  margin-left: 10px;
-}
-
-.label-number {
-  margin-right: 10px;
-}
-
-.email {
-  padding-left: 44px;
-}
-
-.college {
-  padding-left: 10px;
-}
-
-.course {
-  padding-left: 37px;
-}
-
-/* class list */
 .panel-title > a:hover,
 .panel-title > a:focus {
   text-decoration: none;
@@ -43,6 +19,7 @@
 
 .panel-footer {
   box-shadow: 0 1px 5px grey;
+  padding: 5px 10px;
 }
 
 .justify {
@@ -61,18 +38,28 @@
   border: 1px solid #292C33;
 }
 
-.btn-class-danger {
-  color: #ECEFF1;
-  background-color: #B71C1C;
-  border: 1px solid #B71C1C;
+.icon-color {
+  color: #E2E1E1;
+  background-color: #263238;
 }
 
-.btn-class-danger:hover {
+.icon-color:hover,
+.icon-color:focus,
+.icon-color:active {
   color: white;
-  background-color: #BD0E0B;
-  border: 1px solid #BD0E0B;
+  background-color: #293A42;
+}
+
+.open>.dropdown-toggle.btn-default:focus,
+.open>.dropdown-toggle.btn-default:hover {
+  color: white;
+  background-color: #293A42;
 }
 
 .pagination {
   margin: 10px 0;
+}
+
+.icon-md {
+  font-size: 20px;
 }

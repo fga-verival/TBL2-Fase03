@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/sidebar.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
@@ -45,13 +46,13 @@
             <a href="#" class="btn" data-toggle="tooltip" data-placement="right" title="Perfil">
               <i class="fa fa-user icon-lg"></i>
             </a>
-            <a href="#" class="btn" data-toggle="tooltip" data-placement="right" title="Editar informações pessoais">
+            <a href="edit_information.html" class="btn" data-toggle="tooltip" data-placement="right" title="Editar informações pessoais">
               <i class="fa fa-edit icon-lg"></i>
             </a>
-            <a href="#" class="btn" data-toggle="tooltip" data-placement="right" title="Procurar disciplina/turma">
+            <a href="class_list.html" class="btn" data-toggle="tooltip" data-placement="right" title="Procurar disciplina/turma">
               <i class="fa fa-search icon-lg"></i>
             </a>
-            <a href="#" class="btn" data-toggle="tooltip" data-placement="right" title="Criar disciplina/turma">
+            <a href="create_class.html" class="btn" data-toggle="tooltip" data-placement="right" title="Criar disciplina/turma">
               <i class="fa fa-book icon-lg"></i>
             </a>
             <a href="#" class="btn" data-toggle="tooltip" data-placement="right" title="Mensagens">
@@ -114,15 +115,37 @@
                     </div>
                     <div id="collapse1" class="panel-collapse collapse out">
                       <div class="panel-body">
-                        Disciplina de medição e análise...
+                        <div class="row">
+                          <div class="col-sm-11">
+                            Disciplina de medição e análise...
+                          </div>
+                          <div class="col-sm-1">
+                            <span class="label label-primary">10/50</span>
+                          </div>
+                        </div>
                       </div>
                       <div class="panel-footer">
-                        Professor(a): Fulano de Tal
-                        <div class="btn-group pull-right btn-class-group">
-                          <button type="button" class="btn btn-class"><i class="fa fa-eye"></i></button>
-                          <button type="button" class="btn btn-class"><i class="fa fa-trophy"></i></button>
-                          <button type="button" class="btn btn-class"><i class="fa fa-edit"></i></button>
-                          <button type="button" class="btn btn-class-danger"><i class="fa fa-trash"></i></button>
+                        <div class="row">
+                          <div class="col-md-9 col-sm-8 col-xs-12">
+                            <span><b>Professor(a)</b>: Fulano de Tal</span><br />
+                            <span><b>Curso</b>: <span class="justify">Engenharia de Software</span></span>
+                          </div>
+                          <div class="col-md-3 col-sm-4 col-xs-12">
+                            <div class="btn-group btn-group-justified">
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-class"><i class="fa fa-eye"></i></button>
+                              </div>
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-class"><i class="fa fa-trophy"></i></button>
+                              </div>
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-class"><i class="fa fa-edit"></i></button>
+                              </div>
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-class-danger"><i class="fa fa-trash"></i></button>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -138,15 +161,37 @@
                     </div>
                     <div id="collapse2" class="panel-collapse collapse out">
                       <div class="panel-body">
-                        Disciplina de requisitos de software...
+                        <div class="row">
+                          <div class="col-sm-11">
+                            Disciplina de requisitos de software...
+                          </div>
+                          <div class="col-sm-1">
+                            <span class="label label-primary">30/60</span>
+                          </div>
+                        </div>
                       </div>
                       <div class="panel-footer">
-                        Professor(a): Fulano de tal
-                        <div class="btn-group pull-right btn-class-group">
-                          <button type="button" class="btn btn-class"><i class="fa fa-eye"></i></button>
-                          <button type="button" class="btn btn-class"><i class="fa fa-trophy"></i></button>
-                          <button type="button" class="btn btn-class"><i class="fa fa-edit"></i></button>
-                          <button type="button" class="btn btn-class-danger"><i class="fa fa-trash"></i></button>
+                        <div class="row">
+                          <div class="col-md-9 col-sm-8 col-xs-12">
+                            <span><b>Professor(a)</b>: Fulano de Tal</span><br />
+                            <span><b>Curso</b>: <span class="justify">Engenharia de Software</span></span>
+                          </div>
+                          <div class="col-md-3 col-sm-4 col-xs-12">
+                            <div class="btn-group btn-group-justified">
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-class"><i class="fa fa-eye"></i></button>
+                              </div>
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-class"><i class="fa fa-trophy"></i></button>
+                              </div>
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-class"><i class="fa fa-edit"></i></button>
+                              </div>
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-class-danger"><i class="fa fa-trash"></i></button>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -162,15 +207,37 @@
                     </div>
                     <div id="collapse3" class="panel-collapse collapse out">
                       <div class="panel-body">
-                        Disciplina de calculo 01...
+                        <div class="row">
+                          <div class="col-sm-11">
+                            Disciplina de calculo 01...
+                          </div>
+                          <div class="col-sm-1">
+                            <span class="label label-primary">60/60</span>
+                          </div>
+                        </div>
                       </div>
                       <div class="panel-footer">
-                        Professor(a): Fulano de Tal
-                        <div class="btn-group pull-right btn-class-group">
-                          <button type="button" class="btn btn-class"><i class="fa fa-eye"></i></button>
-                          <button type="button" class="btn btn-class"><i class="fa fa-trophy"></i></button>
-                          <button type="button" class="btn btn-class"><i class="fa fa-edit"></i></button>
-                          <button type="button" class="btn btn-class-danger"><i class="fa fa-trash"></i></button>
+                        <div class="row">
+                          <div class="col-md-9 col-sm-8 col-xs-12">
+                            <span><b>Professor(a)</b>: Fulano de Tal</span><br />
+                            <span><b>Curso</b>: <span class="justify">Engenharia de Software</span></span>
+                          </div>
+                          <div class="col-md-3 col-sm-4 col-xs-12">
+                            <div class="btn-group btn-group-justified">
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-class"><i class="fa fa-eye"></i></button>
+                              </div>
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-class"><i class="fa fa-trophy"></i></button>
+                              </div>
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-class"><i class="fa fa-edit"></i></button>
+                              </div>
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-class-danger"><i class="fa fa-trash"></i></button>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -186,39 +253,37 @@
                     </div>
                     <div id="collapse4" class="panel-collapse collapse out">
                       <div class="panel-body">
-                        Disciplina de medição e análise...
-                      </div>
-                      <div class="panel-footer">
-                        Professor(a): Fulano de Tal
-                        <div class="btn-group pull-right btn-class-group">
-                          <button type="button" class="btn btn-class"><i class="fa fa-eye"></i></button>
-                          <button type="button" class="btn btn-class"><i class="fa fa-trophy"></i></button>
-                          <button type="button" class="btn btn-class"><i class="fa fa-edit"></i></button>
-                          <button type="button" class="btn btn-class-danger"><i class="fa fa-trash"></i></button>
+                        <div class="row">
+                          <div class="col-sm-11">
+                            Disciplina de medição e análise...
+                          </div>
+                          <div class="col-sm-1">
+                            <span class="label label-primary">60/60</span>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
-                          <span><i class="fa fa-book"></i> Computação Básica</span>
-                          <span class="pull-right">Turma B <i class="fa fa-slideshare"></i></span>
-                        </a>
-                      </h4>
-                    </div>
-                    <div id="collapse5" class="panel-collapse collapse out">
-                      <div class="panel-body">
-                        Disciplina de computação básica...
-                      </div>
                       <div class="panel-footer">
-                        Professor(a): Fulano de Tal
-                        <div class="btn-group pull-right btn-class-group">
-                          <button type="button" class="btn btn-class"><i class="fa fa-eye"></i></button>
-                          <button type="button" class="btn btn-class"><i class="fa fa-trophy"></i></button>
-                          <button type="button" class="btn btn-class"><i class="fa fa-edit"></i></button>
-                          <button type="button" class="btn btn-class-danger"><i class="fa fa-trash"></i></button>
+                        <div class="row">
+                          <div class="col-md-9 col-sm-8 col-xs-12">
+                            <span><b>Professor(a)</b>: Fulano de Tal</span><br />
+                            <span><b>Curso</b>: <span class="justify">Engenharia de Software</span></span>
+                          </div>
+                          <div class="col-md-3 col-sm-4 col-xs-12">
+                            <div class="btn-group btn-group-justified">
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-class"><i class="fa fa-eye"></i></button>
+                              </div>
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-class"><i class="fa fa-trophy"></i></button>
+                              </div>
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-class"><i class="fa fa-edit"></i></button>
+                              </div>
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-class-danger"><i class="fa fa-trash"></i></button>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
