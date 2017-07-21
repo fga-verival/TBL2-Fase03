@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="css/profile.css">
     <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/delete.css">
+    <link rel="stylesheet" href="css/message.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
@@ -55,12 +57,13 @@
             <a href="create_class.html" class="btn" data-toggle="tooltip" data-placement="right" title="Criar disciplina/turma">
               <i class="fa fa-book icon-lg"></i>
             </a>
-            <a href="#" class="btn" data-toggle="tooltip" data-placement="right" title="Mensagens">
+            <button type="button" class="btn side-button message-button" data-toggle="modal" data-target="#message-modal">
               <i class="fa fa-envelope icon-lg"></i>
-            </a>
-            <a href="#" class="btn" data-toggle="tooltip" data-placement="right" title="Deletar conta">
+              <span class="badge">05</span>
+            </button>
+            <button type="button" class="btn side-button" data-toggle="modal" data-target="#delete-modal">
               <i class="fa fa-trash icon-lg"></i>
-            </a>
+            </button>
           </div>
         </div>
         <!-- profile -->
@@ -75,8 +78,8 @@
               </div>
               <div class="col-sm-9">
                 <div class="row">
-                  <span class="label label-primary pull-left">Professor(a)</span>
-                  <span class="label label-success pull-left">Online</span>
+                  <span class="label label-primary pull-left label-text">Professor(a)</span>
+                  <span class="label label-success pull-left label-text">Online</span>
                   <span class="label label-primary label-number pull-right">Número de identificação</span>
                 </div>
                 <h2 class="name">Fulano de Tal</h2>
@@ -133,13 +136,13 @@
                           <div class="col-md-3 col-sm-4 col-xs-12">
                             <div class="btn-group btn-group-justified">
                               <div class="btn-group">
-                                <button type="button" class="btn btn-class"><i class="fa fa-eye"></i></button>
+                                <a href="#" class="btn btn-class"><i class="fa fa-eye"></i></a>
                               </div>
                               <div class="btn-group">
-                                <button type="button" class="btn btn-class"><i class="fa fa-trophy"></i></button>
+                                <a href="#" class="btn btn-class"><i class="fa fa-trophy"></i></a>
                               </div>
                               <div class="btn-group">
-                                <button type="button" class="btn btn-class"><i class="fa fa-edit"></i></button>
+                                <a href="create_class.html" class="btn btn-class"><i class="fa fa-edit"></i></a>
                               </div>
                               <div class="btn-group">
                                 <button type="button" class="btn btn-class-danger"><i class="fa fa-trash"></i></button>
@@ -179,13 +182,13 @@
                           <div class="col-md-3 col-sm-4 col-xs-12">
                             <div class="btn-group btn-group-justified">
                               <div class="btn-group">
-                                <button type="button" class="btn btn-class"><i class="fa fa-eye"></i></button>
+                                <a href="#" class="btn btn-class"><i class="fa fa-eye"></i></a>
                               </div>
                               <div class="btn-group">
-                                <button type="button" class="btn btn-class"><i class="fa fa-trophy"></i></button>
+                                <a href="#" class="btn btn-class"><i class="fa fa-trophy"></i></a>
                               </div>
                               <div class="btn-group">
-                                <button type="button" class="btn btn-class"><i class="fa fa-edit"></i></button>
+                                <a href="create_class.html" class="btn btn-class"><i class="fa fa-edit"></i></a>
                               </div>
                               <div class="btn-group">
                                 <button type="button" class="btn btn-class-danger"><i class="fa fa-trash"></i></button>
@@ -225,13 +228,13 @@
                           <div class="col-md-3 col-sm-4 col-xs-12">
                             <div class="btn-group btn-group-justified">
                               <div class="btn-group">
-                                <button type="button" class="btn btn-class"><i class="fa fa-eye"></i></button>
+                                <a href="#" class="btn btn-class"><i class="fa fa-eye"></i></a>
                               </div>
                               <div class="btn-group">
-                                <button type="button" class="btn btn-class"><i class="fa fa-trophy"></i></button>
+                                <a href="#" class="btn btn-class"><i class="fa fa-trophy"></i></a>
                               </div>
                               <div class="btn-group">
-                                <button type="button" class="btn btn-class"><i class="fa fa-edit"></i></button>
+                                <a href="create_class.html" class="btn btn-class"><i class="fa fa-edit"></i></a>
                               </div>
                               <div class="btn-group">
                                 <button type="button" class="btn btn-class-danger"><i class="fa fa-trash"></i></button>
@@ -271,13 +274,13 @@
                           <div class="col-md-3 col-sm-4 col-xs-12">
                             <div class="btn-group btn-group-justified">
                               <div class="btn-group">
-                                <button type="button" class="btn btn-class"><i class="fa fa-eye"></i></button>
+                                <a href="#" class="btn btn-class"><i class="fa fa-eye"></i></a>
                               </div>
                               <div class="btn-group">
-                                <button type="button" class="btn btn-class"><i class="fa fa-trophy"></i></button>
+                                <a href="#" class="btn btn-class"><i class="fa fa-trophy"></i></a>
                               </div>
                               <div class="btn-group">
-                                <button type="button" class="btn btn-class"><i class="fa fa-edit"></i></button>
+                                <a href="create_class.html" class="btn btn-class"><i class="fa fa-edit"></i></a>
                               </div>
                               <div class="btn-group">
                                 <button type="button" class="btn btn-class-danger"><i class="fa fa-trash"></i></button>
@@ -304,7 +307,86 @@
         </div>
       </div>
     </main>
-    <!-- Delete button -->
-    <!-- Notification button -->
+    <!-- Delete modal -->
+    <div class="modal fade" id="delete-modal" role="dialog">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><i class="fa fa-close"></i></button>
+            <h4 class="modal-title">Deletar Conta</h4>
+          </div>
+          <div class="modal-body">
+            <p>Tem certeza que deseja deletar?</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger pull-right" data-dismiss="modal">
+              <i class="fa fa-trash"></i> Deletar
+            </button>
+            <button type="button" class="btn btn-primary pull-left" data-dismiss="modal">
+              <i class="fa fa-close"></i> Cancelar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Notification modal -->
+    <div class="modal fade" id="message-modal" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><i class="fa fa-close"></i></button>
+            <h4 class="modal-title"><span class="badge" style="font-size: 20px;">5</span> <span class="msg-title">Mensagens</span></h4>
+          </div>
+          <div class="modal-body">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-11">
+                    <p class="text-justify">Noticia 01 blah bla blah...</p>
+                    <a href="#">Link</a>
+                    <span class="date pull-right">05/08/2017 às 15:00</span>
+                  </div>
+                  <div class="col-xs-12 col-sm-1">
+                    <a href="#deletar" class="pull-right"><i class="fa fa-close"></i></a>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-11">
+                    <p class="text-justify">Noticia 01 blah bla blah...</p>
+                    <a href="#">Link</a>
+                    <span class="date pull-right">02/08/2017 às 12:50</span>
+                  </div>
+                  <div class="col-xs-12 col-sm-1">
+                    <a href="#deletar" class="pull-right"><i class="fa fa-close"></i></a>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-11">
+                    <p class="text-justify">Noticia 01 blah bla blah...</p>
+                    <a href="#">Link</a>
+                    <span class="date pull-right">17/07/2017 às 9:25</span>
+                  </div>
+                  <div class="col-xs-12 col-sm-1">
+                    <a href="#deletar" class="pull-right"><i class="fa fa-close"></i></a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="modal-footer" style="padding: 0 10px 0 0;">
+            <ul class="pagination">
+              <li><a href="#"><<</a></li>
+              <li class="active"><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">>></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

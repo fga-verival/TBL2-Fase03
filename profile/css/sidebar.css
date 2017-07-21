@@ -34,3 +34,18 @@
   padding-right: 15px;
   color: #B3B3B3;
 }
+
+.side-button {
+  padding-bottom: 25px;
+}
+
+.message-button {
+  padding-left: 35px;
+}
+
+.badge {
+  right: 28px;
+  color: #b71c1c;
+  font-size: 15px;
+  background-color: transparent;
+}
