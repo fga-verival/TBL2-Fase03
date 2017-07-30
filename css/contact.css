@@ -24,6 +24,11 @@
   width: 150px;
 }
 
+.input-group-addon {
+  background-color: #263238;
+  color: white;
+}
+
 textarea {
   resize: none;
 }
