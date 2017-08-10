@@ -6,12 +6,16 @@
   background-image: url('../img/wood.jpg');
 }
 
-.panel-body > img {
+figure > img {
   width: 150px;
-  margin: 10px;
-  margin-left: 18px;
   border: 15px ridge gold !important;
   box-shadow: 5px 5px 5px grey;
+}
+
+figcaption {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
 }
 
 .fa-star {
