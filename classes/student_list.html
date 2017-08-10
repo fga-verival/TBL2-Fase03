@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TBL</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="css/student_list.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse-navbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand navbar-link" href="#vai-para-a-home-logado"><i class="fa fa-home"></i> Team Based Learning</a>
+          </div>
+          <div class="collapse navbar-collapse" id="collapse-navbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="../profile/profile.html" class="navbar-link"><i class="fa fa-user"></i> Perfil</a></li>
+              <li><a href="../home.html#home" class="navbar-link"><i class="fa fa-sign-out"></i> Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="row">
+        <div class="col-sm-12 navegation">
+          <ul class="breadcrumb pull-left">
+            <li><a href="../home.html#home">Home</a></li>
+            <li><a href="../profile/profile.html">Perfil</a></li>
+            <li><a href="class.html">Medição e Análise</a></li>
+            <li><a href="student_list.html">Lista de alunos</a></li>
+          </ul>
+          <p class="pull-right">Quinta, 10 de Janeiro de 2017 <i class="fa fa-calendar"></i></p>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Sidebar -->
+        <div class="col-sm-2">
+          <div class="btn-group-vertical">
+            <a href="class.html" class="btn" data-toggle="tooltip" data-placement="right" title="Ementa">
+              <i class="fa fa-book icon-lg"></i>
+            </a>
+            <a href="student_list.html" class="btn" data-toggle="tooltip" data-placement="right" title="Lista de alunos">
+              <i class="fa fa-users icon-lg"></i>
+            </a>
+            <a href="grade.html" class="btn" data-toggle="tooltip" data-placement="right" title="Notas">
+              <i class="fa fa-graduation-cap icon-lg"></i>
+            </a>
+            <a href="groups.html" class="btn" data-toggle="tooltip" data-placement="right" title="Grupos">
+              <i class="fa fa-slideshare icon-lg"></i>
+            </a>
+            <a href="rank.html" class="btn" data-toggle="tooltip" data-placement="right" title="Rank de grupos">
+              <i class="fa fa-trophy icon-lg"></i>
+            </a>
+            <button type="button" class="btn side-button message-button" data-toggle="modal" data-target="#session-modal">
+              <i class="fa fa-puzzle-piece icon-lg"></i>
+            </button>
+            <a href="files.html" class="btn" data-toggle="tooltip" data-placement="right" title="Materiais">
+              <i class="fa fa-file-pdf-o icon-lg"></i>
+            </a>
+          </div>
+        </div>
+        <!-- student list -->
+        <div class="col-sm-3">
+          <div class="media">
+            <div class="media-left">
+              <img src="img/user.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body white">
+              <h4 class="media-heading"><a href="#perfil">John Doe</a></h4>
+              <p>john@gmail.com - 1301374494</p>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-left">
+              <img src="img/user.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body white">
+              <h4 class="media-heading"><a href="#perfil">John Doe</a></h4>
+              <p>john@gmail.com - 1301374494</p>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-left">
+              <img src="img/user.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body white">
+              <h4 class="media-heading"><a href="#perfil">John Doe</a></h4>
+              <p>john@gmail.com - 1301374494</p>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-left">
+              <img src="img/user.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body white">
+              <h4 class="media-heading"><a href="#perfil">John Doe</a></h4>
+              <p>john@gmail.com - 1301374494</p>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-left">
+              <img src="img/user.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body white">
+              <h4 class="media-heading"><a href="#perfil">John Doe</a></h4>
+              <p>john@gmail.com - 1301374494</p>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-left">
+              <img src="img/user.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body white">
+              <h4 class="media-heading"><a href="#perfil">John Doe</a></h4>
+              <p>john@gmail.com - 1301374494</p>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-left">
+              <img src="img/user.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body white">
+              <h4 class="media-heading"><a href="#perfil">John Doe</a></h4>
+              <p>john@gmail.com - 1301374494</p>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-left">
+              <img src="img/user.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body white">
+              <h4 class="media-heading"><a href="#perfil">John Doe</a></h4>
+              <p>john@gmail.com - 1301374494</p>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-left">
+              <img src="img/user.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body white">
+              <h4 class="media-heading"><a href="#perfil">John Doe</a></h4>
+              <p>john@gmail.com - 1301374494</p>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-left">
+              <img src="img/user.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body white">
+              <h4 class="media-heading"><a href="#perfil">John Doe</a></h4>
+              <p>john@gmail.com - 1301374494</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="media">
+            <div class="media-left">
+              <img src="img/user.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body white">
+              <h4 class="media-heading"><a href="#perfil">John Doe</a></h4>
+              <p>john@gmail.com - 1301374494</p>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-left">
+              <img src="img/user.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body white">
+              <h4 class="media-heading"><a href="#perfil">John Doe</a></h4>
+              <p>john@gmail.com - 1301374494</p>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-left">
+              <img src="img/user.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body white">
+              <h4 class="media-heading"><a href="#perfil">John Doe</a></h4>
+              <p>john@gmail.com - 1301374494</p>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-left">
+              <img src="img/user.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body white">
+              <h4 class="media-heading"><a href="#perfil">John Doe</a></h4>
+              <p>john@gmail.com - 1301374494</p>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-left">
+              <img src="img/user.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body white">
+              <h4 class="media-heading"><a href="#perfil">John Doe</a></h4>
+              <p>john@gmail.com - 1301374494</p>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-left">
+              <img src="img/user.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body white">
+              <h4 class="media-heading"><a href="#perfil">John Doe</a></h4>
+              <p>john@gmail.com - 1301374494</p>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-left">
+              <img src="img/user.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body white">
+              <h4 class="media-heading"><a href="#perfil">John Doe</a></h4>
+              <p>john@gmail.com - 1301374494</p>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-left">
+              <img src="img/user.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body white">
+              <h4 class="media-heading"><a href="#perfil">John Doe</a></h4>
+              <p>john@gmail.com - 1301374494</p>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-left">
+              <img src="img/user.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body white">
+              <h4 class="media-heading"><a href="#perfil">John Doe</a></h4>
+              <p>john@gmail.com - 1301374494</p>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-left">
+              <img src="img/user.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body white">
+              <h4 class="media-heading"><a href="#perfil">John Doe</a></h4>
+              <p>john@gmail.com - 1301374494</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="media">
+            <div class="media-left">
+              <img src="img/user.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body white">
+              <h4 class="media-heading"><a href="#perfil">John Doe</a></h4>
+              <p>john@gmail.com - 1301374494</p>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-left">
+              <img src="img/user.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body white">
+              <h4 class="media-heading"><a href="#perfil">John Doe</a></h4>
+              <p>john@gmail.com - 1301374494</p>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-left">
+              <img src="img/user.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body white">
+              <h4 class="media-heading"><a href="#perfil">John Doe</a></h4>
+              <p>john@gmail.com - 1301374494</p>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-left">
+              <img src="img/user.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body white">
+              <h4 class="media-heading"><a href="#perfil">John Doe</a></h4>
+              <p>john@gmail.com - 1301374494</p>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-left">
+              <img src="img/user.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body white">
+              <h4 class="media-heading"><a href="#perfil">John Doe</a></h4>
+              <p>john@gmail.com - 1301374494</p>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-left">
+              <img src="img/user.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body white">
+              <h4 class="media-heading"><a href="#perfil">John Doe</a></h4>
+              <p>john@gmail.com - 1301374494</p>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-left">
+              <img src="img/user.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body white">
+              <h4 class="media-heading"><a href="#perfil">John Doe</a></h4>
+              <p>john@gmail.com - 1301374494</p>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-left">
+              <img src="img/user.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body white">
+              <h4 class="media-heading"><a href="#perfil">John Doe</a></h4>
+              <p>john@gmail.com - 1301374494</p>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-left">
+              <img src="img/user.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body white">
+              <h4 class="media-heading"><a href="#perfil">John Doe</a></h4>
+              <p>john@gmail.com - 1301374494</p>
+            </div>
+          </div>
+          <div class="media">
+            <div class="media-left">
+              <img src="img/user.png" class="media-object" style="width:60px">
+            </div>
+            <div class="media-body white">
+              <h4 class="media-heading"><a href="#perfil">John Doe</a></h4>
+              <p>john@gmail.com - 1301374494</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Session TBL modal -->
+    <div class="modal fade" id="session-modal" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><i class="fa fa-close"></i></button>
+            <h4 class="modal-title"><span class="msg-title">Sessões TBL</span></h4>
+          </div>
+          <div class="modal-body">
+            <div class="list-group">
+              <a href="#" class="list-group-item">Sessão 01: Objetivos e fundamentos de medição e análise.</a>
+              <a href="#" class="list-group-item">Sessão 02: Técnicas e processos de  medição.</a>
+              <a href="#" class="list-group-item">Sessão 03: Medição e análise no contexto das normas e ferramentas de coleta.</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -40,6 +40,35 @@ footer {
   background-color: #1f272b;
 }
 
+/* breadcrumb */
+.breadcrumb {
+  padding: 0px 15px;
+  padding-top: 10px;
+  margin-bottom: unset;
+  list-style: none;
+  background-color: transparent;
+  border-radius: unset;
+}
+
+.breadcrumb > li > a {
+  color: #B3B3B3;
+}
+
+.breadcrumb > li > a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.navegation {
+  background-color: #343841;
+}
+
+.navegation > p {
+  padding-top: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #B3B3B3;
+}
 
 /* Palheta de cores*/
 .white {

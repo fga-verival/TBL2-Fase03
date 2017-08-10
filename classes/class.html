@@ -27,7 +27,6 @@
           </div>
           <div class="collapse navbar-collapse" id="collapse-navbar">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="../profile/profile.html" class="navbar-link"><i class="fa fa-user"></i> Perfil</a></li>
               <li><a href="../home.html#home" class="navbar-link"><i class="fa fa-sign-out"></i> Logout</a></li>
             </ul>
           </div>
@@ -36,8 +35,12 @@
     </header>
     <main>
       <div class="row">
-        <div class="col-sm-12 message">
-            <p class="pull-left"><i class="fa fa-feed"></i> Não há eventos</p>
+        <div class="col-sm-12 navegation">
+            <ul class="breadcrumb pull-left">
+              <li><a href="../home.html#home">Home</a></li>
+              <li><a href="../profile/profile.html">Perfil</a></li>
+              <li><a href="class.html">Medição e Análise</a></li>
+            </ul>
             <p class="pull-right">Quinta, 10 de Janeiro de 2017 <i class="fa fa-calendar"></i></p>
         </div>
       </div>
@@ -45,7 +48,10 @@
         <!-- Sidebar -->
         <div class="col-sm-2">
           <div class="btn-group-vertical">
-            <a href="user_list.html" class="btn" data-toggle="tooltip" data-placement="right" title="Lista de alunos">
+            <a href="class.html" class="btn" data-toggle="tooltip" data-placement="right" title="Ementa">
+              <i class="fa fa-book icon-lg"></i>
+            </a>
+            <a href="student_list.html" class="btn" data-toggle="tooltip" data-placement="right" title="Lista de alunos">
               <i class="fa fa-users icon-lg"></i>
             </a>
             <a href="grade.html" class="btn" data-toggle="tooltip" data-placement="right" title="Notas">

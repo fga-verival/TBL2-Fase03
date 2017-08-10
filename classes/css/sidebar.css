@@ -23,18 +23,6 @@
   padding-top: 20px;
 }
 
-/* Message events block*/
-.message {
-  background-color: #343841;
-}
-
-.message > p {
-  padding-top: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
-  color: #B3B3B3;
-}
-
 .side-button {
   padding-bottom: 25px;
 }
@@ -48,4 +36,32 @@
   color: #b71c1c;
   font-size: 15px;
   background-color: transparent;
+}
+
+/* Session TBL modal */
+.modal {
+  top: 40px;
+}
+
+.modal-content {
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+.modal-header {
+  background-color: #263238 !important;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.modal-body {
+  background-color: white;
+}
+
+.modal-title {
+  color: white;
+}
+
+.close, .close:hover {
+  color: white;
 }
