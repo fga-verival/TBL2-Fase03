@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="css/groups.css">
-    <link rel="stylesheet" href="../profile/css/delete.css">
+    <link rel="stylesheet" href="css/delete.css">
     <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/add_button.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
@@ -64,9 +65,9 @@
             <a href="rank.html" class="btn" data-toggle="tooltip" data-placement="right" title="Rank de grupos">
               <i class="fa fa-trophy icon-lg"></i>
             </a>
-            <button type="button" class="btn side-button message-button" data-toggle="modal" data-target="#session-modal">
+            <a href="sessions.html" class="btn" data-toggle="tooltip" data-placement="right" title="Sessões do TBL">
               <i class="fa fa-puzzle-piece icon-lg"></i>
-            </button>
+            </a>
             <a href="files.html" class="btn" data-toggle="tooltip" data-placement="right" title="Materiais">
               <i class="fa fa-file-pdf-o icon-lg"></i>
             </a>
@@ -74,13 +75,19 @@
         </div>
         <!-- student list -->
         <div class="col-sm-10">
-          <div class="panel-group" id="accordion">
+          <div class="page-header groups">
+            <h1 class="white">
+              <i class="fa fa-slideshare"></i> Medição e Análise<br />
+              <small>Grupo de alunos</small>
+            </h1>
+          </div>
+          <div class="panel-group groups" id="accordion">
             <div class="panel panel-default">
               <div class="panel-heading">
                 <h4 class="panel-title">
                   <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-                    <span><i class="fa fa-users"></i> Grupo 01</span>
-                    <span class="label label-primary pull-right">5/5</span>
+                    <span><i class="fa fa-slideshare"></i> Grupo 01</span>
+                    <span class="label label-primary pull-right">4/5</span>
                   </a>
                 </h4>
               </div>
@@ -139,19 +146,6 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-sm-2">
-                      <div class="thumbnail">
-                        <button type="button" class="close remove-student-button" data-toggle="modal" data-target="#delete-modal">
-                          <i class="fa fa-close"></i>
-                        </button>
-                        <a href="../profile/profile.html">
-                          <img src="img/user.png" class="img-responsive" alt="Estudante">
-                        </a>
-                        <div class="caption text-center">
-                          <p>Fulano 05</p>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 </div>
                 <div class="panel-footer">
@@ -160,12 +154,12 @@
                       <div class="btn-group btn-group-justified">
                         <div class="btn-group">
                           <button type="button" class="btn btn-class" data-toggle="modal" data-target="#add-student-modal">
-                            <i class="fa fa-user-plus"></i>
+                            <i class="fa fa-user-plus"></i> Adicionar alunos
                           </button>
                         </div>
                         <div class="btn-group">
                           <button type="button" class="btn btn-class" data-toggle="modal" data-target="#edit-modal">
-                            <i class="fa fa-edit"></i>
+                            <i class="fa fa-edit"></i> Editar grupo
                           </button>
                         </div>
                       </div>
@@ -174,7 +168,7 @@
                       <div class="btn-group btn-group-justified">
                         <div class="btn-group">
                           <button type="button" class="btn btn-class-danger" data-toggle="modal" data-target="#delete-modal">
-                            <i class="fa fa-trash"></i>
+                            <i class="fa fa-trash"></i> Deletar grupo
                           </button>
                         </div>
                       </div>
@@ -187,7 +181,7 @@
               <div class="panel-heading">
                 <h4 class="panel-title">
                   <a data-toggle="collapse"  data-parent="#accordion" href="#collapse2">
-                    <span><i class="fa fa-users"></i> Grupo 02</span>
+                    <span><i class="fa fa-slideshare"></i> Grupo 02</span>
                     <span class="label label-primary pull-right">5/5</span>
                   </a>
                 </h4>
@@ -204,7 +198,7 @@
                           <img src="img/user.png" class="img-responsive" alt="Estudante">
                         </a>
                         <div class="caption text-center">
-                          <p>Fulano 01</p>
+                          <p>Fulano 06</p>
                         </div>
                       </div>
                     </div>
@@ -217,7 +211,7 @@
                           <img src="img/user.png" class="img-responsive" alt="Estudante">
                         </a>
                         <div class="caption text-center">
-                          <p>Fulano 02</p>
+                          <p>Fulano 07</p>
                         </div>
                       </div>
                     </div>
@@ -230,7 +224,7 @@
                           <img src="img/user.png" class="img-responsive" alt="Estudante">
                         </a>
                         <div class="caption text-center">
-                          <p>Fulano 03</p>
+                          <p>Fulano 08</p>
                         </div>
                       </div>
                     </div>
@@ -243,7 +237,7 @@
                           <img src="img/user.png" class="img-responsive" alt="Estudante">
                         </a>
                         <div class="caption text-center">
-                          <p>Fulano 04</p>
+                          <p>Fulano 09</p>
                         </div>
                       </div>
                     </div>
@@ -256,7 +250,7 @@
                           <img src="img/user.png" class="img-responsive" alt="Estudante">
                         </a>
                         <div class="caption text-center">
-                          <p>Fulano 05</p>
+                          <p>Fulano 10</p>
                         </div>
                       </div>
                     </div>
@@ -267,13 +261,13 @@
                     <div class="col-md-9">
                       <div class="btn-group btn-group-justified">
                         <div class="btn-group">
-                          <button type="button" class="btn btn-class" data-toggle="modal" data-target="#add-student-modal">
-                            <i class="fa fa-user-plus"></i>
+                          <button type="button" class="btn btn-class">
+                            <i class="fa fa-user-plus"></i> Adicionar alunos
                           </button>
                         </div>
                         <div class="btn-group">
-                          <button type="button" class="btn btn-class" data-toggle="modal" data-target="#edit-modal">
-                            <i class="fa fa-edit"></i>
+                          <button type="button" class="btn btn-class">
+                            <i class="fa fa-edit"></i> Editar grupo
                           </button>
                         </div>
                       </div>
@@ -282,7 +276,7 @@
                       <div class="btn-group btn-group-justified">
                         <div class="btn-group">
                           <button type="button" class="btn btn-class-danger" data-toggle="modal" data-target="#delete-modal">
-                            <i class="fa fa-trash"></i>
+                            <i class="fa fa-trash"></i> Deletar grupo
                           </button>
                         </div>
                       </div>
@@ -292,38 +286,23 @@
               </div>
             </div>
           </div>
-          <form class="row" method="post">
-            <button type="submit" class="btn btn-default send-button center-block">
-              <i class="fa fa-send"></i> Disponibilizar
-            </button>
-          </form>
+          <div class="row groups">
+            <div class="col-sm-10">
+              <form class="" method="post">
+                <button type="submit" class="btn btn-default send-button center-block">
+                  <i class="fa fa-send"></i> Disponibilizar
+                </button>
+              </form>
+            </div>
+            <div class="col-sm-2">
+              <button type="button" class="btn btn-primary btn-lg add-button" data-toggle="modal" data-target="#add-modal">
+                <i class="fa fa-plus"></i>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </main>
-    <!-- Edit Group modal -->
-    <div class="modal fade" id="edit-modal" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal"><i class="fa fa-close"></i></button>
-            <h4 class="modal-title"><span class="msg-title">Editar grupo</span></h4>
-          </div>
-          <div class="modal-body">
-            <form method="post">
-              <div class="form-group">
-                <input type="text" class="form-control" name='title' placeholder='Nome do grupo'>
-              </div>
-              <div class="form-group">
-                <input type="number" class="form-control" name="number" min="0" max="5" placeholder="Quantidade de estudantes">
-              </div>
-              <button type="submit" class="btn btn-default submit-button center-block">
-                <i class="fa fa-edit"></i> Editar
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
     <!-- Add students modal -->
     <div class="modal fade" id="add-student-modal" role="dialog">
       <div class="modal-dialog">
@@ -337,12 +316,60 @@
               <div class="form-group">
                 <label for="select-student">Selecione os estudantes para inserir no grupo:</label>
                 <select multiple class="form-control" id="sel2">
-                  <option>Fulano 01</option>
-                  <option>Fulano 02</option>
-                  <option>Fulano 03</option>
-                  <option>Fulano 04</option>
-                  <option>Fulano 05</option>
+                  <option>Fulano 11</option>
+                  <option>Fulano 12</option>
+                  <option>Fulano 13</option>
+                  <option>Fulano 14</option>
+                  <option>Fulano 15</option>
                 </select>
+              </div>
+              <button type="submit" class="btn btn-default submit-button center-block">
+                <i class="fa fa-plus"></i> Adicionar
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Edit group modal -->
+    <div class="modal fade" id="edit-modal" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><i class="fa fa-close"></i></button>
+            <h4 class="modal-title"><span class="msg-title">Editar Grupo 1</span></h4>
+          </div>
+          <div class="modal-body">
+            <form method="post">
+              <div class="form-group">
+                <input type="text" class="form-control" name='title' value="Grupo 01">
+              </div>
+              <div class="form-group">
+                <input type="number" class="form-control" name="number" min="0" max="5" value="4">
+              </div>
+              <button type="submit" class="btn btn-default submit-button center-block">
+                <i class="fa fa-edit"></i> Editar
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Add group modal -->
+    <div class="modal fade" id="add-modal" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><i class="fa fa-close"></i></button>
+            <h4 class="modal-title">Adicionar grupo</h4>
+          </div>
+          <div class="modal-body">
+            <form method="post">
+              <div class="form-group">
+                <input type="text" class="form-control" name='title' placeholder='Nome do grupo'>
+              </div>
+              <div class="form-group">
+                <input type="number" class="form-control" name="number" min="0" max="5" placeholder="Quantidade de estudantes">
               </div>
               <button type="submit" class="btn btn-default submit-button center-block">
                 <i class="fa fa-plus"></i> Adicionar

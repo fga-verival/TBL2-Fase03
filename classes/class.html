@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="css/class.css">
     <link rel="stylesheet" href="css/sidebar.css">
-    <link rel="stylesheet" href="css/delete.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
@@ -63,9 +62,9 @@
             <a href="rank.html" class="btn" data-toggle="tooltip" data-placement="right" title="Rank de grupos">
               <i class="fa fa-trophy icon-lg"></i>
             </a>
-            <button type="button" class="btn side-button message-button" data-toggle="modal" data-target="#session-modal">
+            <a href="sessions.html" class="btn" data-toggle="tooltip" data-placement="right" title="Sessões do TBL">
               <i class="fa fa-puzzle-piece icon-lg"></i>
-            </button>
+            </a>
             <a href="files.html" class="btn" data-toggle="tooltip" data-placement="right" title="Materiais">
               <i class="fa fa-file-pdf-o icon-lg"></i>
             </a>
@@ -75,7 +74,11 @@
         <div class="col-sm-10">
           <div class="container-fluid">
             <div class="page-header profile">
-              <h1 class="white">Medição e Análise - Turma A</h1>
+              <h1 class="white">
+                <i class="fa fa-book"></i> Medição e Análise
+                <span class="pull-right">Turma A</span> <br />
+                <small>Engenharia de software</small>
+              </h1>
             </div>
             <div class="row">
               <div class="col-sm-12">
@@ -154,23 +157,5 @@
         </div>
       </div>
     </main>
-    <!-- Session TBL modal -->
-    <div class="modal fade" id="session-modal" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal"><i class="fa fa-close"></i></button>
-            <h4 class="modal-title"><span class="msg-title">Sessões TBL</span></h4>
-          </div>
-          <div class="modal-body">
-            <div class="list-group">
-              <a href="#" class="list-group-item">Sessão 01: Objetivos e fundamentos de medição e análise.</a>
-              <a href="#" class="list-group-item">Sessão 02: Técnicas e processos de  medição.</a>
-              <a href="#" class="list-group-item">Sessão 03: Medição e análise no contexto das normas e ferramentas de coleta.</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </body>
 </html>
