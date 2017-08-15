@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/home.css">
-    <link rel="stylesheet" href="css/session.css">
+    <link rel="stylesheet" href="css/dashboard.css">
     <link rel="stylesheet" href="css/sidebar.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="js/dashboard.js"></script>
   </head>
   <body>
     <header>
@@ -41,6 +43,7 @@
               <li><a href="../classes/class.html">Medição e Análise</a></li>
               <li><a href="../classes/sessions.html">Sessões do TBL</a></li>
               <li><a href="session.html">Sessão 01</a></li>
+              <li><a href="dashboard.html">Relatórios</a></li>
             </ul>
             <p class="pull-right">Quinta, 10 de Janeiro de 2017 <i class="fa fa-calendar"></i></p>
         </div>
@@ -80,22 +83,83 @@
           <div class="container-fluid">
             <div class="page-header profile">
               <h1 class="white">
-                Medição e Análise
-                <span class="pull-right">Turma A</span> <br />
-                <small>Sessão 1: Objetivos e fundamentos de medição e análise</small>
+                Medição e Análise <br />
+                <small>Relatórios da Sessão 01</small>
               </h1>
             </div>
-            <br />
-            <div class="row">
-              <div class="col-sm-12">
-                <h4 class="lighten-blue-grey">
-                  <i class="fa fa-wpforms"></i>
-                  <b>Tópicos abordados</b>:
-                </h4>
-                <ul class="lighten-blue-grey">
-                  <li>Terminologia e fundamentos de medição: entidade, atributo, escalas e tipos de medidas.</li>
-                  <li>Objetivo da medição e análise.</li>
-                </ul>
+            <div class="row dashboard white">
+              <div class="col-sm-6">
+                <div class="row">
+                  <div class="panel panel-default report">
+                    <div class="panel-body">
+                      <div class="col-sm-6">
+                        <h4><i class="fa fa-bar-chart-o"></i> Média iRAT</h4>
+                        <p><i class="fa fa-calendar"></i> 20/04/2017 às 15:30</p>
+                      </div>
+                      <div class="col-sm-6">
+                        <h1 class="pull-right">29</h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="row">
+                  <div class="panel panel-default report">
+                    <div class="panel-body">
+                      <div class="col-sm-6">
+                        <h4><i class="fa fa-bar-chart-o"></i> Média gRAT</h4>
+                        <p><i class="fa fa-calendar"></i> 20/04/2017 às 15:30</p>
+                      </div>
+                      <div class="col-sm-6">
+                        <h1 class="pull-right">33</h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row dashboard">
+              <div class="panel panel-default charts">
+                <div class="panel-heading">
+                  <div class="row">
+                    <div class="col-sm-8">
+                      <i class="fa fa-wpforms"></i> Relatórios iRAT e gRAT
+                    </div>
+                    <div class="col-sm-2">
+                      <span class="pull-right">
+                        <i class="fa fa-chevron-up"></i> 39%
+                      </span>
+                    </div>
+                    <div class="col-sm-2">
+                      <span class="pull-right">
+                        <i class="fa fa-chevron-down"></i> -12%
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel-body">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div id="chart-questions"></div>
+                      <div id='png-questions'></div>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div id="chart-students-irat"></div>
+                      <div id='png-irat'></div>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div id="chart-students-grat"></div>
+                      <div id='png-grat'></div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
