@@ -1,0 +1,97 @@
+.exercise {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.panel-heading {
+  background-color: green !important;
+  color: white !important;
+}
+
+.questions {
+  border-radius: 5px 5px 0 0;
+  margin-bottom: 0;
+  background: green; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#263238, green); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#263238, green); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#263238, green); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#263238, green); /* Standard syntax */
+}
+
+.course {
+  padding-right: 34px;
+}
+
+.classes {
+  padding-right: 5px;
+}
+
+.fa-book {
+  padding-right: 7px;
+}
+
+.teacher {
+  padding-right: 4px;
+}
+
+.fa-user {
+  padding-right: 11px;
+}
+
+.roles {
+  cursor: pointer;
+  color: whitesmoke;
+  font-size: 25px;
+}
+
+.roles:hover, .roles:focus {
+  color: white;
+}
+
+.progress-bar {
+  background-color: green;
+}
+
+.badge {
+  font-size: 16px !important;
+}
+
+.total {
+  position: relative;
+  bottom: 1px;
+}
+
+.submit-button {
+  background-color: #263238 !important;
+  width: 97%;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.submit-button:hover, .submit-button:focus {
+  color: white;
+}
+
+.btn-class {
+  color: #ECEFF1;
+  background-color: #343841;
+  border: 1px solid #343841;
+}
+
+.btn-class:hover {
+  color:white;
+  background-color: #292C33;
+  border: 1px solid #292C33;
+}
+
+.btn-class-danger {
+  color: #ECEFF1;
+  background-color: #B71C1C;
+  border: 1px solid #B71C1C;
+}
+
+.btn-class-danger:hover {
+  color: white;
+  background-color: #BD0E0B;
+  border: 1px solid #BD0E0B;
+}

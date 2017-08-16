@@ -1,0 +1,75 @@
+.irat {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.panel-heading {
+  background-color: green !important;
+  color: white !important;
+}
+
+.questions {
+  border-radius: 5px 5px 0 0;
+  margin-bottom: 0;
+  background: green; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#263238, green); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#263238, green); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#263238, green); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#263238, green); /* Standard syntax */
+}
+
+.course {
+  padding-right: 34px;
+}
+
+.classes {
+  padding-right: 5px;
+}
+
+.fa-book {
+  padding-right: 7px;
+}
+
+.teacher {
+  padding-right: 4px;
+}
+
+.fa-user {
+  padding-right: 11px;
+}
+
+
+.student {
+  padding-right: 35px;
+}
+
+
+.roles {
+  cursor: pointer;
+  color: whitesmoke;
+  font-size: 25px;
+}
+
+.time {
+  position:relative;
+  bottom: 25px;
+  left: 25px;
+}
+
+.date {
+  position: relative;
+  top: 20px;
+  left: 50px;
+}
+
+.roles:hover, .roles:focus {
+  color: white;
+}
+
+.progress-bar {
+  background-color: green;
+}
+
+.badge {
+  font-size: 16px !important;
+}
