@@ -70,7 +70,29 @@ footer {
   color: #B3B3B3;
 }
 
-/* Palheta de cores*/
+/* Others */
+.no-decoration:hover {
+  text-decoration: none;
+}
+
+.divisor {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-top: 0.2px solid #656363;
+}
+
+.fix-row {
+  margin-right: 15px;
+  margin-left: 0;
+}
+
+/* Copyright */
+.copyright {
+  color: white;
+  padding-left: 10px;
+}
+
+/* Paleta de cores */
 .white {
   color: white;
 }
@@ -87,19 +109,47 @@ footer {
   color: #b71c1c;
 }
 
-/* Others */
-.no-decoration:hover {
-  text-decoration: none;
+.btn-primary {
+  background: #283F4A; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#283F4A, #286090); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#283F4A, #286090); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#283F4A, #286090); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#283F4A, #286090); /* Standard syntax */
+  border-color: #263238;
 }
 
-.divisor {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border-top: 0.2px solid #656363;
+.btn-primary:hover {
+  background: #283F4A; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#283F4A, #3C6A92); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#283F4A, #3C6A92); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#283F4A, #3C6A92); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#283F4A, #3C6A92); /* Standard syntax */
+  border-color: #263238;
 }
 
-/* Copyright */
-.copyright {
+.btn-danger {
+  background: #D01C1C; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#71292B, #D01C1C); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#71292B, #D01C1C); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#71292B, #D01C1C); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#71292B, #D01C1C); /* Standard syntax */
+  border-color: #71292B;
+}
+
+.btn-danger:hover {
+  background: #D01C1C; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#71292B, #BF4343); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#71292B, #BF4343); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#71292B, #BF4343); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#71292B, #BF4343); /* Standard syntax */
+  border-color: #71292B;
+}
+
+.gradient {
+  background: #283F4A; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#283F4A, #286090); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#283F4A, #286090); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#283F4A, #286090); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#283F4A, #286090); /* Standard syntax */
   color: white;
-  padding-left: 10px;
 }

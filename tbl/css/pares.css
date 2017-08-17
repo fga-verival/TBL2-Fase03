@@ -3,9 +3,13 @@
   color: white !important;
 }
 
-.questions {
+.header-up {
   border-radius: 5px 5px 0 0;
   margin-bottom: 0;
+}
+
+.header-down {
+  border-radius: 0;
 }
 
 .course {
@@ -28,6 +32,22 @@
   padding-right: 11px;
 }
 
+.student {
+  padding-right: 35px;
+}
+
+.time {
+  position:relative;
+  bottom: 25px;
+  left: 25px;
+}
+
+.date {
+  position: relative;
+  top: 20px;
+  left: 50px;
+}
+
 .roles {
   cursor: pointer;
   color: whitesmoke;
@@ -38,28 +58,12 @@
   color: white;
 }
 
-.progress-bar {
-  background-color: #286090;
+.number {
+  margin-top: 25px;
 }
 
-.badge {
-  font-size: 16px !important;
-}
-
-.total {
-  position: relative;
-  bottom: 1px;
-}
-
-.submit-button {
-  background-color: #263238 !important;
-  width: 100%;
-  color: white;
-  margin-bottom: 10px;
-}
-
-.submit-button:hover {
-  color: white;
+textarea {
+  resize: none;
 }
 
 .modal-footer {

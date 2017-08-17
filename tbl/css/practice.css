@@ -3,9 +3,13 @@
   color: white !important;
 }
 
-.questions {
+.header-up {
   border-radius: 5px 5px 0 0;
   margin-bottom: 0;
+}
+
+.header-down {
+  border-radius: 0;
 }
 
 .course {
@@ -24,10 +28,6 @@
   padding-right: 4px;
 }
 
-.fa-user {
-  padding-right: 11px;
-}
-
 .roles {
   cursor: pointer;
   color: whitesmoke;
@@ -35,30 +35,6 @@
 }
 
 .roles:hover, .roles:focus {
-  color: white;
-}
-
-.progress-bar {
-  background-color: #286090;
-}
-
-.badge {
-  font-size: 16px !important;
-}
-
-.total {
-  position: relative;
-  bottom: 1px;
-}
-
-.submit-button {
-  background-color: #263238 !important;
-  width: 100%;
-  color: white;
-  margin-bottom: 10px;
-}
-
-.submit-button:hover {
   color: white;
 }
 

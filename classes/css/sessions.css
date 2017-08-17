@@ -17,57 +17,11 @@
   box-shadow: 0 1px 5px grey;
 }
 
-.btn-class {
-  color: #ECEFF1;
-  background-color: #343841;
-  border: 1px solid #343841;
-}
-
-.btn-class:hover {
-  color:white;
-  background-color: #292C33;
-  border: 1px solid #292C33;
-}
-
-.btn-class-danger {
-  color: #ECEFF1;
-  background-color: #B71C1C;
-  border: 1px solid #B71C1C;
-}
-
-.btn-class-danger:hover {
-  color: white;
-  background-color: #BD0E0B;
-  border: 1px solid #BD0E0B;
-}
-
-.fa-file {
-  position: absolute;
-  font-size: 24px;
-  right: 30px;
-  top: 8px;
-  color: white;
-}
-
-.remove-session-button {
-  color: black !important;
-  margin-bottom: 2px;
-}
-
-.sessions {
-  margin-right: 0;
-  margin-left: 0;
-}
-
 .submit-button {
   background-color: #263238 !important;
-  width: 97%;
+  width: 100%;
   color: white;
   margin-bottom: 10px;
-}
-
-.submit-button:hover, .submit-button:focus {
-  color: white;
 }
 
 .page-header {
@@ -76,4 +30,10 @@
 
 textarea {
   resize: none;
+}
+
+.modal-footer {
+  background-color: #263238 !important;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }

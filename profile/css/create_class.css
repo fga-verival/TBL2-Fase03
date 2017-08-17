@@ -11,9 +11,7 @@ fieldset > legend {
 
 .class-button {
   border-radius: 50% !important;
-  background-color: #B71C1C !important;
-  border-color: #672626 !important;
-  color: white !important;
+  border-color: #283F4A !important;
   width: 40px;
   height: 40px;
   box-shadow: 3px 7px 10px #6D6D6D;
@@ -24,18 +22,11 @@ fieldset > legend {
 
 .class-button:hover {
   border-radius: 50% !important;
-  background-color: #B71C1C !important;
-  border-color: #672626 !important;
   color: white !important;
 }
 
 textarea {
   resize: none;
-}
-
-.information-input {
-  color: white;
-  background-color: #263238;
 }
 
 .input-group {
@@ -53,12 +44,6 @@ textarea {
 }
 
 .submit-button {
-  background-color: #263238 !important;
-  width: 97%;
-  color: white;
+  width: 100%;
   margin-bottom: 10px;
-}
-
-.submit-button:hover {
-  color: white;
 }

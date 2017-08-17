@@ -41,3 +41,10 @@ figcaption {
 .page-header {
   margin: 15px 0 20px;
 }
+
+.btn-primary,
+.btn-primary:hover,
+.open > .dropdown-toggle.btn-primary:focus,
+.open > .dropdown-toggle.btn-primary:hover {
+  border-color: white;
+}

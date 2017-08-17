@@ -1,3 +1,7 @@
+.panel {
+  margin-top: 10px;
+}
+
 .panel-title > a:hover,
 .panel-title > a:focus {
   text-decoration: none;
@@ -15,21 +19,11 @@
 
 .panel-footer {
   box-shadow: 0 1px 5px grey;
+  padding: 5px 10px;
 }
 
-img {
-  width: 150px;
-  margin: 10px;
-}
-
-.thumbnail {
-  padding: 10px;
-}
-
-.panel-group {
-  margin-bottom: 10px;
-  margin-top: 20px;
-  margin-right: 30px;
+.pagination {
+  margin: 10px 0;
 }
 
 .submit-button {
@@ -43,15 +37,12 @@ img {
   color: white;
 }
 
-.send-button {
-  width: 100%;
-  position: relative;
-  right: 15px;
+.btn-border {
+  border-color: white;
 }
 
-.remove-student-button {
-  color: black !important;
-  margin-bottom: 2px;
+textarea {
+  resize: none;
 }
 
 .modal-footer {

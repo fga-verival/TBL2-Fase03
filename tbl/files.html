@@ -56,7 +56,7 @@
               <i class="fa fa-puzzle-piece icon-lg"></i>
             </a>
             <a href="files.html" class="btn" data-toggle="tooltip" data-placement="right" title="Materiais">
-              <i class="fa fa-file-pdf-o icon-lg"></i>
+              <i class="fa fa-folder-open-o icon-lg"></i>
             </a>
             <a href="exercise_list.html" class="btn" data-toggle="tooltip" data-placement="right" title="Lista de execícios">
               <i class="fa fa-leanpub icon-lg"></i>
@@ -83,17 +83,17 @@
         </div>
         <!-- Files -->
         <div class="col-sm-10">
-          <div class="page-header profile">
+          <div class="page-header">
             <div class="row">
               <div class="col-sm-12">
                 <h1 class="white">
-                  <i class="fa fa-file-o"></i> Medição e Análise<br />
-                  <small>Arquivos da Sessão 01</small>
+                  <i class="fa fa-file-o"></i> Materiais da Sessão 01<br />
+                  <small>Medição e Análise</small>
                 </h1>
               </div>
             </div>
           </div>
-          <div class="row files">
+          <div class="row fix-row">
             <div class="col-sm-12">
               <div class="panel-group" id="accordion">
                 <div class="panel panel-default">
@@ -114,12 +114,12 @@
                         <div class="col-md-9">
                           <div class="btn-group btn-group-justified">
                             <div class="btn-group">
-                              <button type="button" class="btn btn-class">
+                              <button type="button" class="btn btn-primary">
                                 <i class="fa fa-download"></i> Download
                               </button>
                             </div>
                             <div class="btn-group">
-                              <button type="button" class="btn btn-class" data-toggle="modal" data-target="#edit-modal">
+                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#edit-modal">
                                 <i class="fa fa-edit"></i> Editar
                               </button>
                             </div>
@@ -128,7 +128,7 @@
                         <div class="col-md-3">
                           <div class="btn-group btn-group-justified">
                             <div class="btn-group">
-                              <button type="button" class="btn btn-class-danger" data-toggle="modal" data-target="#delete-modal">
+                              <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete-modal">
                                 <i class="fa fa-trash"></i> Deletar
                               </button>
                             </div>
@@ -156,12 +156,12 @@
                         <div class="col-md-9">
                           <div class="btn-group btn-group-justified">
                             <div class="btn-group">
-                              <button type="button" class="btn btn-class">
+                              <button type="button" class="btn btn-primary">
                                 <i class="fa fa-download"></i> Download
                               </button>
                             </div>
                             <div class="btn-group">
-                              <button type="button" class="btn btn-class">
+                              <button type="button" class="btn btn-primary">
                                 <i class="fa fa-edit"></i> Editar
                               </button>
                             </div>
@@ -170,7 +170,7 @@
                         <div class="col-md-3">
                           <div class="btn-group btn-group-justified">
                             <div class="btn-group">
-                              <button type="button" class="btn btn-class-danger" data-toggle="modal" data-target="#delete-modal">
+                              <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete-modal">
                                 <i class="fa fa-trash"></i> Deletar
                               </button>
                             </div>
@@ -213,10 +213,12 @@
           <div class="modal-body">
             <form method="post">
               <div class="form-group">
-                <input type="text" class="form-control" name='title' value="Arquivo 01">
+                <label for="title">Nome do arquivo:</label>
+                <input type="text" class="form-control" name='title' value="Arquivo 01" id="title">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" name='extension' value="PDF">
+                <label for="extension">Extensão do arquivo:</label>
+                <input type="text" class="form-control" name='extension' value="PDF" id="extension">
               </div>
               <div class="form-group">
                 <input type="file" class="form-control" name="file">
@@ -249,10 +251,11 @@
                 <input type="file" class="form-control" name="file">
               </div>
               <button type="submit" class="btn btn-default submit-button center-block">
-                <i class="fa fa-edit"></i> Adicionar
+                <i class="fa fa-plus"></i> Adicionar
               </button>
             </form>
           </div>
+          <div class="modal-footer"></div>
         </div>
       </div>
     </div>

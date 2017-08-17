@@ -52,13 +52,13 @@
               <i class="fa fa-book icon-lg"></i>
             </a>
             <a href="student_list.html" class="btn" data-toggle="tooltip" data-placement="right" title="Lista de alunos">
-              <i class="fa fa-users icon-lg"></i>
+              <i class="fa fa-slideshare icon-lg"></i>
             </a>
             <a href="grade.html" class="btn" data-toggle="tooltip" data-placement="right" title="Notas">
               <i class="fa fa-graduation-cap icon-lg"></i>
             </a>
             <a href="groups.html" class="btn" data-toggle="tooltip" data-placement="right" title="Grupos">
-              <i class="fa fa-slideshare icon-lg"></i>
+              <i class="fa fa-grade icon-lg"></i>
             </a>
             <a href="rank.html" class="btn" data-toggle="tooltip" data-placement="right" title="Rank de grupos">
               <i class="fa fa-trophy icon-lg"></i>
@@ -67,24 +67,24 @@
               <i class="fa fa-puzzle-piece icon-lg"></i>
             </a>
             <a href="files.html" class="btn" data-toggle="tooltip" data-placement="right" title="Materiais">
-              <i class="fa fa-file-pdf-o icon-lg"></i>
+              <i class="fa fa-folder-open-o icon-lg"></i>
             </a>
           </div>
         </div>
         <!-- grade -->
         <div class="col-sm-10">
-          <div class="page-header grade">
+          <div class="page-header fix-row">
             <h1 class="white">
-              <i class="fa fa-graduation-cap"></i> Medição e Análise<br />
-              <small>Menções</small>
+              <i class="fa fa-graduation-cap"></i> Menções<br />
+              <small>Medição e Análise</small>
             </h1>
           </div>
-          <ul class="nav nav-tabs grade">
+          <ul class="nav nav-tabs fix-row">
             <li class="active"><a data-toggle="tab" href="#sessao1">Sessão 1</a></li>
             <li><a data-toggle="tab" href="#sessao2">Sessão 2</a></li>
             <li><a data-toggle="tab" href="#mensao">Mensão Final</a></li>
           </ul>
-          <div class="tab-content grade">
+          <div class="tab-content fix-row">
             <div id="sessao1" class="tab-pane fade in active">
               <br />
               <div class="panel panel-default">
@@ -225,7 +225,7 @@
                       </tr>
                     </tbody>
                   </table>
-                  <button type="button" class="btn btn-success btn-block"><i class="fa fa-download"></i> Download CSV</button>
+                  <button type="button" class="btn btn-primary btn-block"><i class="fa fa-download"></i> Download CSV</button>
                 </div>
               </div>
             </div>
@@ -263,7 +263,7 @@
                       </tr>
                     </tbody>
                   </table>
-                  <button type="button" class="btn btn-success btn-block"><i class="fa fa-download"></i> Download CSV</button>
+                  <button type="button" class="btn btn-primary btn-block"><i class="fa fa-download"></i> Download CSV</button>
                 </div>
               </div>
             </div>
@@ -280,22 +280,27 @@
               <div class="modal-body">
                 <form method="post">
                   <div class="form-group">
-                    <input type="text" class="form-control" name="irat" placeholder="iRAT" value="5,75">
+                    <label for="irat">iRAT:</label>
+                    <input type="text" class="form-control" name="irat" placeholder="iRAT" value="5,75" id="irat">
                   </div>
                   <div class="form-group">
-                    <input type="text" class="form-control" name="grat" placeholder="gRAT" value="9,3">
+                    <label for="grat">gRAT:</label>
+                    <input type="text" class="form-control" name="grat" placeholder="gRAT" value="9,3" id="grat">
                   </div>
                   <div class="form-group">
-                    <input type="text" class="form-control" name="app" placeholder="APP" value="8,0">
+                    <label for="app">APP:</label>
+                    <input type="text" class="form-control" name="app" placeholder="APP" value="8,0" id="app">
                   </div>
                   <div class="form-group">
-                    <input type="text" class="form-control" name="pares" placeholder="Avaliação em pares" value="10,0">
+                    <label for="pares">Avaliação em Pares:</label>
+                    <input type="text" class="form-control" name="pares" placeholder="Avaliação em pares" value="10,0" id="pares">
                   </div>
                   <button type="submit" class="btn btn-default submit-button center-block">
                     <i class="fa fa-edit"></i> Editar
                   </button>
                 </form>
               </div>
+              <div class="modal-footer"></div>
             </div>
           </div>
         </div>

@@ -54,13 +54,13 @@
               <i class="fa fa-book icon-lg"></i>
             </a>
             <a href="student_list.html" class="btn" data-toggle="tooltip" data-placement="right" title="Lista de alunos">
-              <i class="fa fa-users icon-lg"></i>
+              <i class="fa fa-slideshare icon-lg"></i>
             </a>
             <a href="grade.html" class="btn" data-toggle="tooltip" data-placement="right" title="Notas">
               <i class="fa fa-graduation-cap icon-lg"></i>
             </a>
             <a href="groups.html" class="btn" data-toggle="tooltip" data-placement="right" title="Grupos">
-              <i class="fa fa-slideshare icon-lg"></i>
+              <i class="fa fa-group icon-lg"></i>
             </a>
             <a href="rank.html" class="btn" data-toggle="tooltip" data-placement="right" title="Rank de grupos">
               <i class="fa fa-trophy icon-lg"></i>
@@ -69,23 +69,23 @@
               <i class="fa fa-puzzle-piece icon-lg"></i>
             </a>
             <a href="files.html" class="btn" data-toggle="tooltip" data-placement="right" title="Materiais">
-              <i class="fa fa-file-pdf-o icon-lg"></i>
+              <i class="fa fa-folder-open-o icon-lg"></i>
             </a>
           </div>
         </div>
         <!-- Files -->
         <div class="col-sm-10">
-          <div class="page-header profile">
+          <div class="page-header">
             <div class="row">
               <div class="col-sm-12">
                 <h1 class="white">
-                  <i class="fa fa-puzzle-piece"></i> Medição e Análise<br />
-                  <small>Sessões do TBL</small>
+                  <i class="fa fa-puzzle-piece"></i> Sessões TBL<br />
+                  <small>Medição e Análise</small>
                 </h1>
               </div>
             </div>
           </div>
-          <div class="row sessions">
+          <div class="row fix-row">
             <div class="col-sm-12">
               <div class="panel-group" id="accordion">
                 <div class="panel panel-default">
@@ -111,12 +111,12 @@
                         <div class="col-md-9">
                           <div class="btn-group btn-group-justified">
                             <div class="btn-group">
-                              <a href="../tbl/session.html" class="btn btn-class">
+                              <a href="../tbl/session.html" class="btn btn-primary">
                                 <i class="fa fa-eye"></i> Entrar na sessão
                               </a>
                             </div>
                             <div class="btn-group">
-                              <button type="button" class="btn btn-class" data-toggle="modal" data-target="#edit-modal">
+                              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#edit-modal">
                                 <i class="fa fa-edit"></i> Editar
                               </button>
                             </div>
@@ -125,7 +125,7 @@
                         <div class="col-md-3">
                           <div class="btn-group btn-group-justified">
                             <div class="btn-group">
-                              <button type="button" class="btn btn-class-danger" data-toggle="modal" data-target="#delete-modal">
+                              <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete-modal">
                                 <i class="fa fa-trash"></i> Deletar
                               </button>
                             </div>
@@ -152,12 +152,12 @@
                         <div class="col-md-9">
                           <div class="btn-group btn-group-justified">
                             <div class="btn-group">
-                              <a href="#" class="btn btn-class">
+                              <a href="#" class="btn btn-primary">
                                 <i class="fa fa-eye"></i> Entrar na sessão
                               </a>
                             </div>
                             <div class="btn-group">
-                              <button type="button" class="btn btn-class">
+                              <button type="button" class="btn btn-primary">
                                 <i class="fa fa-edit"></i> Editar
                               </button>
                             </div>
@@ -166,7 +166,7 @@
                         <div class="col-md-3">
                           <div class="btn-group btn-group-justified">
                             <div class="btn-group">
-                              <button type="button" class="btn btn-class-danger" data-toggle="modal" data-target="#delete-modal">
+                              <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete-modal">
                                 <i class="fa fa-trash"></i> Deletar
                               </button>
                             </div>
@@ -200,9 +200,11 @@
           <div class="modal-body">
             <form method="post">
               <div class="form-group">
-                <input type="text" class="form-control" name='title' value="Sessão 01: Objetivos e fundamentos de medição e análise">
+                <label for="title">Título da sessão do TBL:</label>
+                <input type="text" class="form-control" name='title' value="Sessão 01: Objetivos e fundamentos de medição e análise" id="title">
               </div>
               <div class="form-group">
+                <label for="description">Tópicos da sessão do TBL:</label>
                 <textarea class="form-control" rows="10" id="description">Tópicos da sessão 01</textarea>
               </div>
               <button type="submit" class="btn btn-default submit-button center-block">
@@ -210,6 +212,7 @@
               </button>
             </form>
           </div>
+          <div class="modal-footer"></div>
         </div>
       </div>
     </div>
@@ -234,6 +237,7 @@
               </button>
             </form>
           </div>
+          <div class="modal-footer"></div>
         </div>
       </div>
     </div>

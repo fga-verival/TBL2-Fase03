@@ -7,18 +7,6 @@
   box-shadow: 10px 10px 5px grey;
 }
 
-.news {
-  background-color: #263238;
-  border-color: #263238;
-  color: #ddd;
-}
-
-.news:hover {
-  background-color: #263238;
-  border-color: #263238;
-  color: white;
-}
-
 .news-button {
   margin-left: 15px;
 }

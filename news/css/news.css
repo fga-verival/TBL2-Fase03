@@ -18,3 +18,8 @@
 .no-decoration:hover {
   text-decoration: none;
 }
+
+.btn-border,
+.btn-border:hover {
+  border-color: white;
+}
